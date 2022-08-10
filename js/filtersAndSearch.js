@@ -39,6 +39,17 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper){
     }
 });
 
+document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper2){
+  const dropDownBtn2 = dropDownWrapper2.querySelector('.textBox2');
+  dropDownBtn2.addEventListener('click', function(e) {
+  dropDownWrapper2.classList.toggle('active2');
+  
+  })
+  function show(anything){
+      document.querySelector('.textBox2').value = anything;
+    }
+});
+
 // function show(anything){
 //   document.querySelector('.textBox').value = anything;
 // }

@@ -142,10 +142,6 @@
                   document.querySelector('.textBox').value = anything;
                 }
 
-                // const dropdown = document.querySelector('.dropdown');
-                // dropdown.onclick = function(){
-                //   dropdown.classList.toggle('active');
-                // }
               </script>
 
 
@@ -246,6 +242,63 @@
               <div class="active__filters-top">
                 <p class="active__filters-topTitle">Active Filtrs</p>
                 <button class="button__clear _icon-clear">Clear</button>
+              </div>
+
+              <div class="dropdown2">
+                <input type="text" class="textBox2" placeholder="Sort By" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options2">
+                  <ul class="option__list2">
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="dropdown2">
+                <input type="text" class="textBox2" placeholder="Sort By" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options2">
+                  <ul class="option__list2">
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="dropdown2">
+                <input type="text" class="textBox2" placeholder="Sort By" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options2">
+                  <ul class="option__list2">
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                  </ul>
+                </div>
               </div>
 
               <!-- ================== -->
@@ -2434,6 +2487,18 @@ document.querySelectorAll('.card').forEach(function (dropDownInCards) {
     dropDownBtnInCard.classList.toggle('dropdownInCard--hidden');
     
   })
+});
+  </script>
+  <script>
+    document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper2){
+  const dropDownBtn2 = dropDownWrapper2.querySelector('.textBox2');
+  dropDownBtn2.addEventListener('click', function(e) {
+  dropDownWrapper2.classList.toggle('active2');
+  
+  })
+  function show(anything){
+      document.querySelector('.textBox2').value = anything;
+    }
 });
   </script>
   </div>

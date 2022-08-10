@@ -59,64 +59,79 @@
             <!-- верхня частина сайтбару -->
             <div class="categories__search">
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Select Year</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">2010</li>
-                    <li class="dropdown__list-item" data-value="2012">2012</li>
-                    <li class="dropdown__list-item" data-value="2014">2014</li>
-                    <li class="dropdown__list-item" data-value="2016">2016</li>
-                    <li class="dropdown__list-item" data-value="2018">2018</li>
-                    <li class="dropdown__list-item" data-value="2020">2020</li>
-                    <li class="dropdown__list-item" data-value="2022">2022</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Select Year" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Select Make</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">Belgium</li>
-                    <li class="dropdown__list-item" data-value="2012">Armenia</li>
-                    <li class="dropdown__list-item" data-value="2014">Australia</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Select Make" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Select Model</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">Audi</li>
-                    <li class="dropdown__list-item" data-value="2012">BMW</li>
-                    <li class="dropdown__list-item" data-value="2014">Bentley</li>
-                    <li class="dropdown__list-item" data-value="2016">Cadillac</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Select Model" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Select Trim</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">0</li>
-                    <li class="dropdown__list-item" data-value="2012">2</li>
-                    <li class="dropdown__list-item" data-value="2014">4</li>
-                    <li class="dropdown__list-item" data-value="2016">6</li>
-                    <li class="dropdown__list-item" data-value="2018">8</li>
-                    <li class="dropdown__list-item" data-value="2020">0</li>
-                    <li class="dropdown__list-item" data-value="2022">2</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Select Trim" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
@@ -124,54 +139,60 @@
                 <p class="fitment__text">FITMENT PREFERENCES</p>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Leveling kit</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">0</li>
-                    <li class="dropdown__list-item" data-value="2012">2</li>
-                    <li class="dropdown__list-item" data-value="2014">4</li>
-                    <li class="dropdown__list-item" data-value="2016">6</li>
-                    <li class="dropdown__list-item" data-value="2018">8</li>
-                    <li class="dropdown__list-item" data-value="2020">0</li>
-                    <li class="dropdown__list-item" data-value="2022">2</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Leveling kit" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">Minor Plastic Trimming</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">0</li>
-                    <li class="dropdown__list-item" data-value="2012">2</li>
-                    <li class="dropdown__list-item" data-value="2014">4</li>
-                    <li class="dropdown__list-item" data-value="2016">6</li>
-                    <li class="dropdown__list-item" data-value="2018">8</li>
-                    <li class="dropdown__list-item" data-value="2020">0</li>
-                    <li class="dropdown__list-item" data-value="2022">2</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Minor Plastic Trimming" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
-              <div class="form__group">
-                <div class="dropdown">
-                  <a class="dropdown__button" type="submit">No rubbing or scrubbing</a>
-                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="2010">0</li>
-                    <li class="dropdown__list-item" data-value="2012">2</li>biGr
-                    <li class="dropdown__list-item" data-value="2014">4</li>
-                    <li class="dropdown__list-item" data-value="2016">6</li>
-                    <li class="dropdown__list-item" data-value="2018">8</li>
-                    <li class="dropdown__list-item" data-value="2020">0</li>
-                    <li class="dropdown__list-item" data-value="2022">2</li>
+              <div class="dropdown">
+                <input type="text" class="textBox" placeholder="No rubbing or scrubbing" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options">
+                  <ul class="option__list">
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
+                    <li onclick="show('1')" class="option">1</li>
+                    <li onclick="show('2')" class="option">2</li>
+                    <li onclick="show('3')" class="option">3</li>
+                    <li onclick="show('4')" class="option">4</li>
+                    <li onclick="show('5')" class="option">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                 </div>
               </div>
 
@@ -184,435 +205,26 @@
                 <p class="active__filters-topTitle">Active Filtrs</p>
                 <button class="button__clear _icon-clear">Clear</button>
               </div>
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL DIAMETER</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
+              
+              <div class="dropdown2">
+                <input type="text" class="textBox2" placeholder="Sort By" readonly>
+                <div class="_icon-arrow"></div>
+                <div class="options2">
+                  <ul class="option__list2">
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
+                    <li onclick="show('1')" class="option2">1</li>
+                    <li onclick="show('2')" class="option2">2</li>
+                    <li onclick="show('3')" class="option2">3</li>
+                    <li onclick="show('4')" class="option2">4</li>
+                    <li onclick="show('5')" class="option2">5</li>
                   </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
                 </div>
               </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
-
-              <div class="form__group">
-                <div class="dropdown dropdown2">
-                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
-                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
-                  <ul class="dropdown__list dropdown__list2">
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">15"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">16"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">17"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">18"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">20"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">22"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">24"</p>
-                    </li>
-                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
-                      <input class="checkbox" type="checkbox">
-                      <p class="checkbox__item">26"</p>
-                    </li>
-                  </ul>
-                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
-                    value="">
-                </div>
-              </div>
+              
               <!-- ================== -->
               <p class="searchByKeyword">
                 Search by Keyword
@@ -637,15 +249,22 @@
             <p class="results"><span class="amouth">1668 </span>Results</p>
 
 
-            <div class="form__group">
-              <div class="dropdown dropdownSort">
-                <a class="dropdown__button" type="submit">Sort By</a>
-                <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="2010">price up</li>
-                  <li class="dropdown__list-item" data-value="2012">prise down</li>
+            <div class="dropdown">
+              <input type="text" class="textBox" placeholder="Sort By" readonly>
+              <div class="_icon-arrow"></div>
+              <div class="options">
+                <ul class="option__list">
+                  <li onclick="show('1')" class="option">1</li>
+                  <li onclick="show('2')" class="option">2</li>
+                  <li onclick="show('3')" class="option">3</li>
+                  <li onclick="show('4')" class="option">4</li>
+                  <li onclick="show('5')" class="option">5</li>
+                  <li onclick="show('1')" class="option">1</li>
+                  <li onclick="show('2')" class="option">2</li>
+                  <li onclick="show('3')" class="option">3</li>
+                  <li onclick="show('4')" class="option">4</li>
+                  <li onclick="show('5')" class="option">5</li>
                 </ul>
-                <input class="dropdown__input-hidden" type="text" name="select-category" value="">
               </div>
             </div>
 
@@ -653,17 +272,7 @@
 
           <div class="main__contentBasic">
 
-            <div class="form__group">
-              <div class="dropdown dropdownSort">
-                <a class="dropdown__button filtersAside" type="submit">Filters</a>
-                <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="2010"></li>
-                  <li class="dropdown__list-item" data-value="2012"></li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="select-category" value="">
-              </div>
-            </div>
+            
 
             <div class="main__pagenation">
               <!-- -----------------------------------------блок з картками----------------------------------- -->
