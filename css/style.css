@@ -142,6 +142,8 @@ h6 {
 }
 
 .selectedProduct__title {
+  margin-left: 2px;
+  margin-bottom: 40px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -160,21 +162,32 @@ h6 {
 
 
 .selectedProduct__panel {
-  height: 700px;
+  height: 761px;
   background: #F6F6F6;
   border-radius: 10px;
   padding: 37px 17px;
   grid-column: 2/3;
   grid-row: 1/3;
+  margin-right: -8px;
+  margin-left: 19px;
+}
+
+.main .main__container .selectedProduct .sliders {
+  display: flex;
+  margin-top: -14px;
+  margin-left: 6px;
 }
 
 .selectedProduct__panel-top {
+  width: 398px;
   display: flex;
   justify-content: space-between;
 }
 
 .selectedProduct__panel-top__check {
   background: #419EF4;
+  margin-top: -1px;
+  height: 41px;
   border-radius: 10px;
   width: 174px;
   padding: 13px 0;
@@ -191,33 +204,60 @@ h6 {
   color: #FFFFFF;
 }
 
+.middle__list {
+  margin-top: 40px;
+  margin-left: 23px;
+  margin-bottom: 57px;
+}
+
 .middle__list-item {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-
+  margin-top: 17px;
   color: #000000;
+  position: relative;
 }
 
 ._icon-dollar:before {
+  position: absolute;
+  top: 2px;
+  left: -26px;
+  font-size: 18px;
   color: #419EF4;
 }
 
 ._icon-wheel:before {
+  position: absolute;
+  top: 1px;
+  left: -27px;
+  font-size: 18px;
   color: #419EF4;
 }
 
 ._icon-box:before {
+  position: absolute;
+  top: 0px;
+  left: -31px;
+  font-size: 21px;
   color: #419EF4;
 }
 
 ._icon-discount:before {
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  font-size: 19px;
   color: #419EF4;
 }
 
 ._icon-phone:before {
+  position: absolute;
+  top: 1px;
+  left: -26px;
+  font-size: 18px;
   color: #419EF4;
 }
 
@@ -226,11 +266,19 @@ h6 {
   justify-content: space-evenly;
 }
 
+.subMiddle__left {
+  margin: 0 0px 0 -10px;
+}
+
+.subMiddle__right {
+  padding-left: 13px;
+}
+
 .addTiresBtn {
-  margin-top: 14px;
-  width: 240px;
-  height: 42px;
-  padding: 14px 1px;
+  margin-top: 16px;
+  width: 242px;
+  height: 40px;
+  padding: 14px 0px 0 4px;
   background: #419EF4;
   cursor: pointer;
   border-radius: 10px;
@@ -248,15 +296,20 @@ h6 {
 }
 
 .selectedProduct__panel-footer {
-  row-gap: 32px;
+  margin-top: 55px;
+  margin-left: -3px;
+  margin-right: 10px;
+  row-gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .panel-footerBtn {
-  padding: 14px;
-  width: 241px;
+  cursor: pointer;
+  padding: 13px 1px;
+  height: 43px;
+  width: 243px;
   display: inline-block;
   background: #FFFFFF;
   border: 1.5px solid #419EF4;
@@ -276,6 +329,8 @@ h6 {
 .selectedProduct__about {}
 
 .selectedProduct__about-title {
+  margin-top: 8px;
+  margin-left: -1px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -285,26 +340,24 @@ h6 {
 }
 
 .selectedProduct__about-text {
+  margin-top: 19px;
+  margin-left: -1px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
 }
 
 .selectedProduct__about-Subtext {
+  margin-left: -1px;
+  margin-top: 28px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
 }
 
@@ -315,14 +368,16 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-
   color: #000000;
 }
 
 /* ================================================================================================= */
-.wheelspecs {}
+.wheelspecs {
+  margin-left: -1px;
+}
 
 .wheelspecs__title {
+  margin-top: 58px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -332,6 +387,7 @@ h6 {
 }
 
 .wheelspecs__content {
+  margin-top: 38px;
   display: flex;
   justify-content: space-between;
   gap: 26px;
@@ -340,7 +396,10 @@ h6 {
 .wheelspecs__contentLeft {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+
+.contentLeft-left {
+  margin-right: 17px;
 }
 
 .contentLeft-leftItem {
@@ -349,9 +408,6 @@ h6 {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
 }
 
@@ -361,17 +417,19 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
 
 }
 
+
 .wheelspecs__contentRight {
+  margin-left: 13px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+
+.contentRight-left {
+  margin-right: 16px;
 }
 
 .contentRight-leftItem {
@@ -380,9 +438,6 @@ h6 {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
 }
 
@@ -392,10 +447,152 @@ h6 {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
-
-
   color: #000000;
+}
+
+/* ================================================================================================= */
+.videos {
+  margin-top: 87px;
+  margin-left: -4px;
+  width: 1111px;
+  background: #F6F6F6;
+  border-radius: 10px;
+  padding: 46px 40px;
+}
+
+.videoPlayer__title {
+  margin-top: 1px;
+  margin-bottom: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.video {
+  margin: 0 2px;
+  width: 324px;
+  height: 243px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__item {
+  margin-bottom: 22px;
+  width: 324px;
+  height: 243px;
+}
+
+/* ================================================================================================= */
+.rewiews {
+  margin-top: 69px;
+  margin-left: -1px;
+}
+
+.rewiews__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 24px;
+  margin-bottom: 38px;
+  color: #000000;
+}
+
+.rewiews__title-title {}
+
+.amouthReviews {
+  color: #419EF4;
+}
+
+.ratings:nth-child(even) {
+  background: #F6F6F6;
+  border-radius: 10px;
+  padding: 61px 20px;
+  width: 1111px;
+  margin-bottom: 7px;
+}
+
+.ratings {
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+.rating {}
+
+.rating__stars {
+  margin-bottom: 6px;
+}
+
+.rating__star {
+  width: 41px;
+  height: 41px;
+  margin-right: 2px;
+}
+
+.rating__dataCar {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  color: #419EF4;
+}
+
+.rating__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  color: #000000;
+}
+
+.rating__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.ratings__block-hidden {
+  display: none;
+}
+
+.btnShowAll {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ratings__hiddenBtn {
+  cursor: pointer;
+  width: 241px;
+  background: #419EF4;
+  border-radius: 10px;
+  padding: 14px 0;
+  display: inline-block;
+}
+
+.ratings__hiddenBtn__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #FFFFFF;
+
 }
 
 /* ================================================================================================= */
@@ -420,7 +617,8 @@ h6 {
   width: 63px;
   height: 30px;
   gap: 7px;
-  margin-top: 200px;
+  margin-top: 210px;
+  margin-left: 27px;
   position: relative;
   transform: translateY(-150px);
   -webkit-transform: translateY(-150px);
@@ -431,7 +629,7 @@ h6 {
 
 .main .main__container .selectedProduct .slider2__smollImg {
   width: 63px;
-  height: 63px;
+  height: 72px;
 }
 
 .main .main__container .selectedProduct .smoll__img {
@@ -440,8 +638,8 @@ h6 {
 
 .main .main__container .selectedProduct .slick-arrow.slick-prev {
   position: absolute;
-  top: -10px;
-  right: 20px;
+  top: -39px;
+  right: 26px;
   font-size: 0;
   background: url(../img/arrowUp.svg);
   width: 19px;
@@ -451,7 +649,8 @@ h6 {
 
 .main .main__container .selectedProduct .slick-arrow.slick-next {
   position: absolute;
-  right: 20px;
+  right: 26px;
+  bottom: -360px;
   font-size: 0;
   background: url(../img/arrowDown.svg);
   width: 19px;
@@ -578,11 +777,12 @@ h6 {
   font-size: 65px;
   padding-right: 27px;
   color: #000000;
-  margin-top: 23px;
-  margin-bottom: 17px;
+  margin-top: 26px;
+  margin-bottom: 15px;
 }
 
 .header .nameCompany {
+  margin-left: 26px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -632,7 +832,7 @@ h6 {
   color: #FFFFFF;
   display: flex;
   gap: 49px;
-  padding: 15px 0 15px 5px;
+  padding: 14px 0 15px 5px;
   position: relative;
   z-index: 3;
 }
@@ -766,7 +966,7 @@ h6 {
 
 .crumbs {
   width: calc(1110px + (1110 - 1110) * ((100vw - 320px) / (1920 - 320)));
-  margin: 20px auto 35px;
+  margin: 20px auto 48px;
 }
 
 .crumbs .container {
