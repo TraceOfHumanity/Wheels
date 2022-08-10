@@ -102,13 +102,20 @@
 
             <div class="selectedProduct__panel">
               <div class="selectedProduct__panel-top">
-                <div class="selectedProduct__panel-top__check">
-                  <p class="panel-top__checkBtn">Check Price</p>
+                <div class="cover__top">
+                  <div class="selectedProduct__panel-top__costs">
+                    <p class="costsTop">$353</p>
+                    <p class="subCostsTop">each</p>
+                  </div>
+                  <div class="selectedProduct__panel-top__costs ">
+                    <p class="costsTop">$1353</p>
+                    <p class="subCostsTop">set</p>
+                  </div>
                 </div>
-                <div class="selectedProduct__panel-top__check">
-                  <p class="panel-top__checkBtn">Check Price</p>
-                </div>
+                
+
               </div>
+              
               <div class="selectedProduct__panel-middle">
                 <ul class="middle__list">
                   <li class="middle__list-item _icon-dollar">SAVE UP TO $61 WHEN ADDING TIRES TO PACKAGE</li>
@@ -648,6 +655,16 @@
     showAll.onclick = function () {
       document.querySelector('.ratings__blockIn').classList.toggle('ratings__block-hidden');
     }
+  </script>
+  <script>
+    document.querySelectorAll('.selectedProduct__panel-top__btn').forEach(function (dropDownInSelectedProduct) {
+      const checkDrop = dropDownInSelectedProduct.querySelector('.selectedProduct__panel-top__check');
+      const dropDownCheckList = dropDownInSelectedProduct.querySelector('.dropForSelectProduct');
+      checkDrop.addEventListener('click', function () {
+        dropDownCheckList.classList.toggle('dropForSelectProduct__hidden');
+        this.classList.add('.dropdown__button--active');
+      });
+    })
   </script>
 
   </div>
