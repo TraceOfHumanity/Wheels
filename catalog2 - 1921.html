@@ -210,7 +210,7 @@
                 </div>
               </div>
 
-              
+
 
 
             </div>
@@ -248,6 +248,143 @@
                 <button class="button__clear _icon-clear">Clear</button>
               </div>
 
+              <div class="dropsWithCheck">
+                <div class="dropChecks">
+                  <a class="dropChecks__button" type="submit">WHEEL DIAMETER</a>
+                  <img class="dropChecks__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropChecks__lists dropChecks__listsHidden">
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb1">
+                      <label for="cb1"><a href="#">15"</a><span class="grayNum">(231)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb2">
+                      <label for="cb2"><a href="#">16"</a><span class="grayNum">(2121)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb3">
+                      <label for="cb3">17"<span class="grayNum">(24551)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb4">
+                      <label for="cb4">18"<span class="grayNum">(1)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb5">
+                      <label for="cb5">20"<span class="grayNum">(2)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cd6">
+                      <label for="cd6">22"<span class="grayNum">(218)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb7">
+                      <label for="cb7">24"<span class="grayNum">(21)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb8">
+                      <label for="cb8">26"<span class="grayNum">(888)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="dropsWithCheck">
+                <div class="dropChecks">
+                  <a class="dropChecks__button" type="submit">WHEEL WIDTH</a>
+                  <img class="dropChecks__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropChecks__lists dropChecks__listsHidden">
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb1">
+                      <label for="cb1">15"<span class="grayNum">(231)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb2">
+                      <label for="cb2">16"<span class="grayNum">(2121)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb3">
+                      <label for="cb3">17"<span class="grayNum">(24551)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb4">
+                      <label for="cb4">18"<span class="grayNum">(1)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb5">
+                      <label for="cb5">20"<span class="grayNum">(2)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cd6">
+                      <label for="cd6">22"<span class="grayNum">(218)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb7">
+                      <label for="cb7">24"<span class="grayNum">(21)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb8">
+                      <label for="cb8">26"<span class="grayNum">(888)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="dropsWithCheck">
+                <div class="dropChecks">
+                  <a class="dropChecks__button" type="submit">WHEEL WIDTH</a>
+                  <img class="dropChecks__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropChecks__lists dropChecks__listsHidden">
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb1">
+                      <label for="cb1">15"<span class="grayNum">(231)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb2">
+                      <label for="cb2">16"<span class="grayNum">(2121)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb3">
+                      <label for="cb3">17"<span class="grayNum">(24551)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb4">
+                      <label for="cb4">18"<span class="grayNum">(1)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb5">
+                      <label for="cb5">20"<span class="grayNum">(2)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cd6">
+                      <label for="cd6">22"<span class="grayNum">(218)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb7">
+                      <label for="cb7">24"<span class="grayNum">(21)</span></label>
+                    </li>
+                    <li class="checkbox-container">
+                      <input type="checkbox" id="cb8">
+                      <label for="cb8">26"<span class="grayNum">(888)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              
+
+              <script>
+                document.querySelectorAll('.dropChecks').forEach(function (dropDownWrapperCheck) {
+                  const dropDownBtnCheck = dropDownWrapperCheck.querySelector('.dropChecks__button');
+                  const dropChecksLists = dropDownWrapperCheck.querySelector('.dropChecks__lists');
+
+                  // відкрити\закрити випадаючий список по кліку на нього
+                  dropDownBtnCheck.addEventListener('click', function () {
+                    dropChecksLists.classList.toggle('dropChecks__listsHidden');
+                  })
+                })
+
+              </script>
 
               <!-- ================== -->
               <p class="searchByKeyword">
@@ -275,13 +412,13 @@
 
             <div class="dropdown menuFilters" style="display: none">
               <p class="textBox"></p>
-              
+
               <!-- <div class="options">
 
               </div> -->
             </div>
             <div class="main__contentTopDrops">
-              
+
             </div>
             <div class="form__group">
               <div class="dropdown menuFilters">
@@ -313,7 +450,7 @@
                 <input class="dropdown__input-hidden" type="text" name="select-category" value="">
               </div>
             </div>
-            
+
             <div class="form__group form__groupSort form__groupSort2">
               <div class="dropdown dropdown2">
                 <a class="dropdown__button" type="submit">Sort</a>
@@ -332,13 +469,13 @@
                 <input class="dropdown__input-hidden" type="text" name="select-category" value="">
               </div>
             </div>
-            
+
 
           </div>
 
           <div class="main__contentBasic">
 
-            
+
 
             <div class="main__pagenation">
               <!-- -----------------------------------------блок з картками----------------------------------- -->
