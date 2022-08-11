@@ -33,11 +33,49 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper){
   dropDownBtn.addEventListener('click', function() {
   dropDownWrapper.classList.toggle('active');
   
+  const dropDownList = dropDownWrapper.querySelector('.option__list');
+  const dropDownListItems = dropDownList.querySelectorAll('.option');
+
+  dropDownListItems.forEach(function (listItem){
+    listItem.addEventListener('click', function (e){
+      e.stopPropagation();
+      dropDownBtn.innerHTML = this.innerHTML;
+      dropDownBtn.focus();
+      dropDownWrapper.dropDownBtn.value = this.show.value;
+    })
   })
-  // function show(anything){
-  //     document.querySelector('.textBox').value = anything;
-  //   }
+  })
+  function show(anything){
+      document.querySelector('.textBox').value = anything;
+    }
 });
+// document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+//   const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
+// const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
+// const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+// const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
+// const dropDownBtnAside = document.querySelector('.filtersAside');
+// const dropFilters = document.querySelector('.main__siteBar');
+
+
+// // відкрити\закрити випадаючий список по кліку на нього
+// dropDownBtn.addEventListener('click', function() {
+//   dropDownList.classList.toggle('dropdown__list--visible');
+//   this.classList.add('.dropdown__button--active');
+// });
+
+
+
+// // вибір елементу із списку та запамятання значення + закриття списку після вибору
+// dropDownListItems.forEach(function (listItem) {
+//   listItem.addEventListener('click', function (e) {
+//     e.stopPropagation();
+//     dropDownBtn.innerText = this.innerText;
+//     dropDownBtn.focus();
+//     dropDownInput.value = this.dataset.value;
+//     dropDownList.classList.remove('dropdown__list--visible');
+//   })
+// });
 
 // document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper2){
 //   const dropDownBtn2 = dropDownWrapper2.querySelector('.textBox2');
@@ -54,6 +92,12 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper){
 //   document.querySelector('.textBox').value = anything;
 // }
 
+// //відкриття\закриття сайтбару для мобільних пристроїв
+// dropDownBtnAside.addEventListener('click', function() {
+//   dropFilters.classList.toggle('main__siteBar--active');
+//   this.classList.add('.main__siteBar--active');
+// });
+
 // const dropdown = document.querySelector('.dropdown');
 // dropdown.onclick = function(){
 //   dropdown.classList.toggle('active');
@@ -68,24 +112,17 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper){
 // const dropFilters = document.querySelector('.main__siteBar');
 
 
-
-
-
-
 // // відкрити\закрити випадаючий список по кліку на нього
 // dropDownBtn.addEventListener('click', function() {
 //   dropDownList.classList.toggle('dropdown__list--visible');
 //   this.classList.add('.dropdown__button--active');
 // });
 
-
 // //відкриття\закриття сайтбару для мобільних пристроїв
 // dropDownBtnAside.addEventListener('click', function() {
 //   dropFilters.classList.toggle('main__siteBar--active');
 //   this.classList.add('.main__siteBar--active');
 // });
-
-
 
 // // вибір елементу із списку та запамятання значення + закриття списку після вибору
 // dropDownListItems.forEach(function (listItem) {
@@ -97,6 +134,8 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper){
 //     dropDownList.classList.remove('dropdown__list--visible');
 //   })
 // });
+
+
 
 
 // // клік за межами списку закриває його
