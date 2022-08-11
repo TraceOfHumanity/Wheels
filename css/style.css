@@ -1196,8 +1196,12 @@ h6 {
 
 .dropdown {
   position: relative;
+  z-index: 3;
   width: 215px;
   height: 42px;
+}
+.dropdown.active{
+  z-index: 4;
 }
 
 .dropdown input {
@@ -1226,7 +1230,7 @@ h6 {
 .dropdown .options {
   z-index: 3;
   position: absolute;
-  top: 40px;
+  top: 34px;
   width: 100%;
   background: #FFFFFF;
   border: 1px solid #DFDFDF;
@@ -1237,6 +1241,9 @@ h6 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top: 0;
 }
 
 .dropdown+.dropdown {
@@ -1275,7 +1282,8 @@ h6 {
 }
 
 .active ._icon-arrow {
-  right: 10px;
+  right: 9px;
+  top: 16px;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1717,7 +1725,7 @@ h6 {
 .main__contentTop .dropdown .options {
   z-index: 3;
   position: absolute;
-  top: 40px;
+  top: 34px;
   width: 100%;
   background: #FFFFFF;
   border: 1px solid #DFDFDF;
@@ -1728,6 +1736,9 @@ h6 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top: 0;
 }
 
 .main__contentTop .dropdown+.dropdown {
@@ -1909,7 +1920,7 @@ h6 {
 }
 
 .main .main__content .results {
-  width: 150px;
+  width: 220px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -2033,11 +2044,11 @@ h6 {
 .main .main__content .dropdownInCard {
   position: absolute;
   padding: 15px 3px 14px 3px;
-  width: 168px;
+  width: 173px;
   height: 124px;
   z-index: 2;
-  top: 30px;
-  left: -4px;
+  top: 24px;
+  left: -5px;
   background: #FFFFFF;
   border: 1px solid #DFDFDF;
   border-radius: 10px;
@@ -2053,8 +2064,8 @@ h6 {
 .main .main__content .dropdownInCard .dropdownInCard__list li .dropdownInCard__listItem {
   font-family: 'Montserrat';
   font-style: normal;
-  display: block;
-  padding-left: 11px;
+  display: inline-block;
+  padding: 0 10px;
   margin-top: -2px;
   font-weight: 500;
   font-size: 14px;
