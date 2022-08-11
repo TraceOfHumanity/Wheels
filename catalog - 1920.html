@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/iconsFont.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Page 2</title>
+  <title>catalog - 1920</title>
 </head>
 
 <body>
@@ -58,8 +58,6 @@
           <form class="form__siteBar" action="#">
             <!-- верхня частина сайтбару -->
             <div class="categories__search">
-
-              <div class="vehicle"> Vehicle Info</div>
 
               <div class="dropdown">
                 <input type="text" class="textBox" placeholder="Select Year" readonly>
@@ -137,16 +135,6 @@
                 </div>
               </div>
 
-              <script>
-                function show(anything){
-                  document.querySelector('.textBox').value = anything;
-                }
-
-              </script>
-
-
-
-
               <div class="fitment">
                 <p class="fitment__text">FITMENT PREFERENCES</p>
               </div>
@@ -208,34 +196,8 @@
                 </div>
               </div>
 
-
             </div>
             <!-- /верхня частина сайтбару -->
-
-            <div class="coverForRangeInput">
-              <div class="headerRange">
-                <h2 class="range">Price Range</h2>
-              </div>
-
-              <div class="slider">
-                <div class="progress"></div>
-              </div>
-              <div class="range-input">
-                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-              </div>
-              <div class="price-input">
-                <div class="field">
-                  <span class="ddd dmi">$</span>
-                  <input type="number" class="input-min" value="2500">
-                </div>
-
-                <div class="field">
-                  <span class="ddd dmax">$</span>
-                  <input type="number" class="input-max" value="7500">
-                </div>
-              </div>
-            </div>
 
             <!-- нижня частина сайтбару з чекбоксами та пошуком -->
             <div class="active__filters">
@@ -243,7 +205,7 @@
                 <p class="active__filters-topTitle">Active Filtrs</p>
                 <button class="button__clear _icon-clear">Clear</button>
               </div>
-
+              
               <div class="dropdown2">
                 <input type="text" class="textBox2" placeholder="Sort By" readonly>
                 <div class="_icon-arrow"></div>
@@ -262,45 +224,7 @@
                   </ul>
                 </div>
               </div>
-
-              <div class="dropdown2">
-                <input type="text" class="textBox2" placeholder="Sort By" readonly>
-                <div class="_icon-arrow"></div>
-                <div class="options2">
-                  <ul class="option__list2">
-                    <li onclick="show('1')" class="option2">1</li>
-                    <li onclick="show('2')" class="option2">2</li>
-                    <li onclick="show('3')" class="option2">3</li>
-                    <li onclick="show('4')" class="option2">4</li>
-                    <li onclick="show('5')" class="option2">5</li>
-                    <li onclick="show('1')" class="option2">1</li>
-                    <li onclick="show('2')" class="option2">2</li>
-                    <li onclick="show('3')" class="option2">3</li>
-                    <li onclick="show('4')" class="option2">4</li>
-                    <li onclick="show('5')" class="option2">5</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="dropdown2">
-                <input type="text" class="textBox2" placeholder="Sort By" readonly>
-                <div class="_icon-arrow"></div>
-                <div class="options2">
-                  <ul class="option__list2">
-                    <li onclick="show('1')" class="option2">1</li>
-                    <li onclick="show('2')" class="option2">2</li>
-                    <li onclick="show('3')" class="option2">3</li>
-                    <li onclick="show('4')" class="option2">4</li>
-                    <li onclick="show('5')" class="option2">5</li>
-                    <li onclick="show('1')" class="option2">1</li>
-                    <li onclick="show('2')" class="option2">2</li>
-                    <li onclick="show('3')" class="option2">3</li>
-                    <li onclick="show('4')" class="option2">4</li>
-                    <li onclick="show('5')" class="option2">5</li>
-                  </ul>
-                </div>
-              </div>
-
+              
               <!-- ================== -->
               <p class="searchByKeyword">
                 Search by Keyword
@@ -322,8 +246,15 @@
         <div class="main__content">
 
           <div class="main__contentTop">
-            <p class="results">Showing 1-48 of 1353 results</p>
+            <p class="results"><span class="amouth">1668 </span>Results</p>
 
+            <div class="dropdown menuFilters">
+              <input type="text" class="textBox" placeholder="Filters" readonly>
+              <div class="_icon-arrow"></div>
+              <div class="options">
+
+              </div>
+            </div>
 
             <div class="dropdown">
               <input type="text" class="textBox" placeholder="Sort By" readonly>
@@ -348,17 +279,7 @@
 
           <div class="main__contentBasic">
 
-            <div class="form__group">
-              <div class="dropdown dropdownSort">
-                <a class="dropdown__button filtersAside" type="submit">Filters</a>
-                <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="2010"></li>
-                  <li class="dropdown__list-item" data-value="2012"></li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="select-category" value="">
-              </div>
-            </div>
+            
 
             <div class="main__pagenation">
               <!-- -----------------------------------------блок з картками----------------------------------- -->
@@ -374,67 +295,8 @@
                       <p class="product__size">20X10 - 22mm</p>
                     </div>
                     <div class="card__price">
-                      <div class="button__checkP">
-                        <p class="checkPrice" id="checkPriceID">Check Price</p>
-                      </div>
-                      <div class="dropdownInCard dropdownInCard--hidden" id="dropdownInCardID">
-                        <ul class="dropdownInCard__list">
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                        </ul>
-                      </div>
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
                     </div>
                     <div class="more__info">
                       <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
@@ -454,67 +316,8 @@
                       <p class="product__size">20X10 - 22mm</p>
                     </div>
                     <div class="card__price">
-                      <div class="button__checkP">
-                        <p class="checkPrice" id="checkPriceID">Check Price</p>
-                      </div>
-                      <div class="dropdownInCard dropdownInCard--hidden" id="dropdownInCardID">
-                        <ul class="dropdownInCard__list">
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Amazon</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Tinder</p>
-                          </li>
-                          <li>
-                            <p class="dropdownInCard__listItem">Rozetka.com.ua</p>
-                          </li>
-                        </ul>
-                      </div>
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
                     </div>
                     <div class="more__info">
                       <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
@@ -621,10 +424,10 @@
                       <p class="costs"><span class="">$</span> 1828</p>
                       <p class="setFour">Set of four</p>
                     </div>
-                    <!-- <div class="more__info">
+                    <div class="more__info">
                       <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
                       <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
 
@@ -2435,7 +2238,7 @@
             </div>
           </div>
         </div>
-
+        
 
         <!-- /додаткова інформація під головним контентом -->
       </div>
@@ -2469,36 +2272,9 @@
   <!-- <script src="js/app.min.js"></script> -->
   <script src="js/filtersAndSearch.js"></script>
   <script>
-    document.querySelectorAll('.card').forEach(function (dropDownInCards) {
-  const dropDownBtnInCard = dropDownInCards.querySelector('#checkPriceID');
-  const dropDownlistInCard = dropDownInCards.querySelector('#dropdownInCardID');
-
-
-  dropDownBtnInCard.addEventListener('click', function () {
-    dropDownlistInCard.classList.toggle('dropdownInCard--hidden');
-    
-  })
-});
-document.querySelectorAll('.card').forEach(function (dropDownInCards) {
-  const dropDownBtnInCard = dropDownInCards.querySelector('#dropdownInCardID');
-
-
-  dropDownInCards.addEventListener('click', function () {
-    dropDownBtnInCard.classList.toggle('dropdownInCard--hidden');
-    
-  })
-});
-  </script>
-  <script>
-    document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper2){
-  const dropDownBtn2 = dropDownWrapper2.querySelector('.textBox2');
-  dropDownBtn2.addEventListener('click', function(e) {
-  dropDownWrapper2.classList.toggle('active2');
-  
-  })
-  function show(anything){
-      document.querySelector('.textBox2').value = anything;
-    }
+    document.querySelector('.menuFilters').addEventListener('click', function() {
+      document.querySelector('.main__siteBar').classList.toggle('main__siteBar--active');
+  // this.classList.add('.dropdown__button--active');
 });
   </script>
   </div>
