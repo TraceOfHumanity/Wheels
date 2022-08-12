@@ -146,6 +146,7 @@ h6 {
 
 
 .selectedProduct__panel {
+  order: 2;
   height: 761px;
   background: #F6F6F6;
   border-radius: 10px;
@@ -262,10 +263,16 @@ h6 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
+  padding: 0 10px;
   font-size: 14px;
   line-height: 22px;
   cursor: pointer;
   color: #419EF4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .dropForSelectProduct__list-item:hover {
@@ -336,7 +343,7 @@ h6 {
   padding-left: 38px;
 }
 
-.subMiddle__right .dropdown ._icon-arrow{
+.subMiddle__right .dropdown ._icon-arrow {
   right: -10px;
 }
 
@@ -371,11 +378,12 @@ h6 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.selectedProduct__panel .dropdown .options{
+
+.selectedProduct__panel .dropdown .options {
   width: 242px;
 }
 
-.selectedProduct__panel .dropdown.active ._icon-arrow{
+.selectedProduct__panel .dropdown.active ._icon-arrow {
   right: -12px;
 }
 
@@ -525,9 +533,10 @@ h6 {
 }
 
 /* ================================================================================================= */
-.slider__video{
+.slider__video {
   margin: 0 0 0 -24px;
 }
+
 .videos {
   margin-top: 87px;
   margin-left: -4px;
@@ -536,7 +545,8 @@ h6 {
   border-radius: 10px;
   padding: 46px 40px;
 }
-.videos .slick-slide{
+
+.videos .slick-slide {
   margin-right: 8px;
 }
 
@@ -848,6 +858,401 @@ h6 {
   color: #419EF4;
 }
 
+/* ====================================================================================== */
+@media (max-width: 1130px) {
+  .main .main__container .selectedProduct {
+    padding: 0 5px;
+  }
+
+  .selectedProduct__info {
+    display: grid;
+    grid-template-columns: calc(380px + (539 - 380) * ((100vw - 767px) / (1130 - 767))) calc(150px + (539 - 150) * ((100vw - 320px) / (1130 - 320)));
+    grid-template-rows: 1fr 300px;
+  }
+
+  .selectedProduct__panel {
+    order: 2px;
+    height: calc(830px + (800 - 830) * ((100vw - 768px) / (1130 - 768)));
+  }
+
+  .selectedProduct__about {
+    margin-top: calc(-150px + (300 - 150) * ((100vw - 768px) / (1130 - 768)));
+    order: 3;
+  }
+
+  .main .main__container .selectedProduct .sliders {
+    display: flex;
+    width: min-content;
+    order: 1;
+  }
+
+  .slick-slide img {
+    width: calc(200px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider1 {
+    width: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider1__bigImg {
+    width: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
+    height: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider2 {
+    width: calc(30px + (63 - 30) * ((100vw - 320px) / (1130 - 320)));
+    height: 30px;
+    gap: 7px;
+    margin-top: calc(189px + (240 - 189) * ((100vw - 768px) / (1130 - 768)));
+    margin-left: calc(-72px + (180 - 72) * ((100vw - 768px) / (1130 - 768)));
+    position: relative;
+    transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -o-transform: translateY(-150px);
+  }
+
+  .main .main__container .selectedProduct .slider2__smollImg {
+    width: calc(30px + (63 - 30) * ((100vw - 320px) / (1130 - 320)));
+    height: 72px;
+  }
+
+  .main .main__container .selectedProduct .smoll__img {
+    width: 100%;
+  }
+
+  .main .main__container .selectedProduct .slick-arrow.slick-prev {
+    position: absolute;
+    top: calc(23px + (-39 - 23) * ((100vw - 320px) / (1130 - 320)));
+    right: calc(8px + (26 - 8) * ((100vw - 320px) / (1130 - 320)));
+    font-size: 0;
+    background: url(../img/arrowUp.svg);
+    width: 19px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+
+  .main .main__container .selectedProduct .slick-arrow.slick-next {
+    position: absolute;
+    right: calc(8px + (26 - 8) * ((100vw - 320px) / (1130 - 320)));
+    bottom: calc(-195px + (150 - 195) * ((100vw - 320px) / (1130 - 768)));
+    font-size: 0;
+    background: url(../img/arrowDown.svg);
+    width: 19px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+
+  .selectedProduct__panel-top {
+    width: calc(200px + (398 - 200) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .selectedProduct__panel-top__check {
+    width: calc(100px + (174 - 100) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .dropForSelectProduct__list {
+    width: calc(93px + (174 - 93) * ((100vw - 320px) / (1130 - 320)));
+  }
+  .selectedProduct__panel .dropdown.active ._icon-arrow{
+    right: -22px;
+  }
+  .middle__list-item {
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .selectedProduct__panel-middle {
+    margin-top: calc(-18px + (0 - 18) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .selectedProduct__panel-subMiddle {
+    margin-top: calc(-16px + (0 - 16) * ((100vw - 320px) / (1130 - 320)));
+    margin-left: calc(-9px + (18 - 9) * ((100vw - 768px) / (1130 - 768)));
+    width: calc(200px + (458 - 200) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .main .main__container .selectedProduct .dropdown {
+    width: calc(-12px + (242 - 1) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .main .main__container .selectedProduct .dropdown input {
+    width: calc(50px + (276 - 85) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .subMiddle__right {
+    width: calc(100px + (242 - 100) * ((100vw - 320px) / (1130 - 320)));
+    padding-left: calc(0px + (38 - 0) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .subMiddle__left {
+    width: calc(60px + (242 - 60) * ((100vw - 320px) / (1130 - 320)));
+    margin: 0px 0px 0 0px;
+  }
+
+  .subMiddle__right .dropdown input {
+    width: calc(-12px + (242 - 1) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .selectedProduct__panel-subMiddle ._icon-arrow {
+    right: calc(-35px + (70 - 35) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .subMiddle__right .dropdown ._icon-arrow {
+    right: calc(-35px + (70 - 35) * ((100vw - 320px) / (1130 - 320)));
+  }
+
+  .addTiresBtn {
+    width: calc(156px + (242 - 156) * ((100vw - 768px) / (1130 - 768)));
+  }
+
+  .addTiresBtn__title {
+    font-size: calc(12px + (14 - 12) * ((100vw - 768px) / (1130 - 768)));
+  }
+
+  .panel-footerBtn {
+    width: calc(360px + (487 - 360) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .selectedProduct__panel .dropdown .options{
+    width: calc(155px + (242 - 155) * ((100vw - 768px) / (1130 - 768)));
+  }
+
+  .selectedProduct__panel-footer {
+    margin: 30px 0 0 0;
+  }
+  .wheelspecs__title{
+    font-size: calc(18px + (26 - 18) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .contentLeft-leftItem{
+    font-size: calc(14px + (17 - 14) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .contentLeft-rightItem{
+    font-size: calc(11px + (17 - 11) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .contentRight-leftItem{
+    font-size: calc(14px + (17 - 14) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .contentRight-rightItem{
+    font-size: calc(11px + (17 - 11) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .wheelspecs__contentLeft{
+    width: calc(800px + (1200 - 800) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .videos{
+    margin-top: calc(10px + (87 - 10) * ((100vw - 768px) / (1130 - 768)));
+    width: calc(768px + (1111 - 768) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .video__item{
+    width: calc(327px + (500 - 327) * ((100vw - 768px) / (1130 - 768)));
+    height: calc(245px + (380 - 245) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .ratings__hiddenBtn{
+    margin-right: calc(10px + (-9 - 10) * ((100vw - 768px) / (1130 - 768)));
+  }
+  .ratings:nth-child(even){
+    width: calc(767px + (1130 - 767) * ((100vw - 768px) / (1130 - 768)));
+    padding: calc(20px + (61 - 20) * ((100vw - 768px) / (1130 - 768))) 20px;
+  }
+  
+}
+/* ==================================================================================================================== */
+@media (max-width: 767px) {
+
+  .selectedProduct__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectedProduct__panel {
+    order: 2px;
+    height: calc(830px + (800 - 830) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__about {
+    margin-top: calc(-150px + (300 - 150) * ((100vw - 320px) / (767 - 320)));
+    order: 3;
+  }
+
+  .main .main__container .selectedProduct .sliders {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: 0 auto;
+    order: 1;
+  }
+  
+  .slick-slide img {
+    width: calc(302px + (441 - 302) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider1 {
+    width: calc(380px + (441 - 380) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider1__bigImg {
+    width: calc(380px + (441 - 380) * ((100vw - 320px) / (767 - 320)));
+    height: calc(380px + (441 - 380) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .main .main__container .selectedProduct .slider2 {
+    width: calc(63px + (407 - 63) * ((100vw - 320px) / (767 - 320)));
+    height: 63px;
+    gap: 7px;
+    margin-top: calc(189px + (240 - 189) * ((100vw - 320px) / (767 - 320)));
+    margin-left: calc(-72px + (180 - 72) * ((100vw - 320px) / (767 - 320)));
+    position: relative;
+    transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -o-transform: translateY(-150px);
+  }
+
+  .main .main__container .selectedProduct .slider2__smollImg {
+    width: calc(63px + (63 - 63) * ((100vw - 320px) / (767 - 320)));
+    height: 72px;
+  }
+
+  .main .main__container .selectedProduct .smoll__img {
+    width: 100%;
+  }
+
+  .main .main__container .selectedProduct .slick-arrow.slick-prev {
+    position: absolute;
+    top: calc(23px + (-39 - 23) * ((100vw - 320px) / (767 - 320)));
+    right: calc(8px + (26 - 8) * ((100vw - 320px) / (767 - 320)));
+    font-size: 0;
+    background: url(../img/arrowUp.svg);
+    width: 19px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+
+  .main .main__container .selectedProduct .slick-arrow.slick-next {
+    position: absolute;
+    right: calc(8px + (26 - 8) * ((100vw - 320px) / (767 - 320)));
+    bottom: calc(-195px + (150 - 195) * ((100vw - 320px) / (767 - 320)));
+    font-size: 0;
+    background: url(../img/arrowDown.svg);
+    width: 19px;
+    height: 18px;
+    background-repeat: no-repeat;
+  }
+
+  .selectedProduct__panel-top {
+    width: calc(200px + (398 - 200) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__panel-top__check {
+    width: calc(100px + (174 - 100) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .dropForSelectProduct__list {
+    width: calc(93px + (174 - 93) * ((100vw - 320px) / (767 - 320)));
+  }
+  .selectedProduct__panel .dropdown.active ._icon-arrow{
+    right: -22px;
+  }
+  .middle__list-item {
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__panel-middle {
+    margin-top: calc(-18px + (0 - 18) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__panel-subMiddle {
+    margin-top: calc(-16px + (0 - 16) * ((100vw - 320px) / (767 - 320)));
+    margin-left: calc(-9px + (18 - 9) * ((100vw - 320px) / (767 - 320)));
+    width: calc(200px + (458 - 200) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .main .main__container .selectedProduct .dropdown {
+    width: calc(-12px + (242 - 1) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .main .main__container .selectedProduct .dropdown input {
+    width: calc(50px + (276 - 85) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .subMiddle__right {
+    width: calc(100px + (242 - 100) * ((100vw - 320px) / (767 - 320)));
+    padding-left: calc(0px + (38 - 0) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .subMiddle__left {
+    width: calc(60px + (242 - 60) * ((100vw - 320px) / (767 - 320)));
+    margin: 0px 0px 0 0px;
+  }
+
+  .subMiddle__right .dropdown input {
+    width: calc(-12px + (242 - 1) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__panel-subMiddle ._icon-arrow {
+    right: calc(-35px + (70 - 35) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .subMiddle__right .dropdown ._icon-arrow {
+    right: calc(-35px + (70 - 35) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .addTiresBtn {
+    width: calc(156px + (242 - 156) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .addTiresBtn__title {
+    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .panel-footerBtn {
+    width: calc(360px + (487 - 360) * ((100vw - 320px) / (767 - 320)));
+  }
+  .selectedProduct__panel .dropdown .options{
+    width: calc(155px + (242 - 155) * ((100vw - 320px) / (767 - 320)));
+  }
+
+  .selectedProduct__panel-footer {
+    margin: 30px 0 0 0;
+  }
+  .wheelspecs__title{
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (767 - 320)));
+  }
+  .contentLeft-leftItem{
+    font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (767 - 320)));
+  }
+  .contentLeft-rightItem{
+    font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (767 - 320)));
+  }
+  .contentRight-leftItem{
+    font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (767 - 320)));
+  }
+  .contentRight-rightItem{
+    font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (767 - 320)));
+  }
+  .wheelspecs__contentLeft{
+    width: calc(800px + (1200 - 800) * ((100vw - 320px) / (767 - 320)));
+  }
+  .videos{
+    margin-top: calc(10px + (87 - 10) * ((100vw - 320px) / (767 - 320)));
+    width: calc(320px + (1111 - 320) * ((100vw - 320px) / (767 - 320)));
+  }
+  .video__item{
+    width: calc(327px + (500 - 327) * ((100vw - 320px) / (767 - 320)));
+    height: calc(245px + (380 - 245) * ((100vw - 320px) / (767 - 320)));
+  }
+  .ratings__hiddenBtn{
+    margin-right: calc(10px + (-9 - 10) * ((100vw - 320px) / (767 - 320)));
+  }
+  .ratings:nth-child(even){
+    width: calc(767px + (767 - 767) * ((100vw - 320px) / (767 - 320)));
+    padding: calc(20px + (61 - 20) * ((100vw - 320px) / (767 - 320))) 20px;
+  }
+  
+}
+
+
+/* ====================================================================================== */
 .header .header__container {
   width: calc(1110px + (1110 - 1110) * ((100vw - 320px) / (1920 - 320)));
   margin: 0 auto;
@@ -1700,7 +2105,8 @@ h6 {
   display: flex;
   align-items: center;
 }
-.checkboxLabel{
+
+.checkboxLabel {
   padding: 0 0 0 0;
 }
 
@@ -1711,7 +2117,8 @@ h6 {
   height: 19px;
   position: absolute;
 }
-.dimentions{
+
+.dimentions {
   margin: 0 8px;
 }
 
@@ -1758,7 +2165,13 @@ h6 {
 .dropsWithCheck+.dropsWithCheck {
   border-top: 1px solid #FFFFFF;
 }
-.sHow + .dropsWithCheck{
+
+.sHow {
+  cursor: pointer;
+}
+
+.sHow+.dropsWithCheck {
+
   border-top: 1px solid #FFFFFF;
 }
 

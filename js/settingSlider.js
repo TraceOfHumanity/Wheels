@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
   $('.slider1').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -13,11 +13,30 @@ $(function(){
     asNavFor: '.slider1',
     infinite: true,
     vertical: true,
-    verticalSwiping:true,
+    verticalSwiping: true,
     arrows: true,
     dots: false,
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1131,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          vertical: false,
+        }
+      },
+    ]
   });
   $('.slider__video').slick({
     slidesToShow: 3,
@@ -30,6 +49,17 @@ $(function(){
     focusOnSelect: true,
     // variableWidth: true,
     // centerMode: true,
-    rows:2,
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 1131,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          rows: 2,
+        }
+      },
+    ]
   });
 })
