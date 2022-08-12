@@ -1593,7 +1593,7 @@ h6 {
 .main .main__siteBar .active__filters {
   background: #F6F6F6;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 20px 21px;
 }
 
 .main .main__siteBar .active__filters .form__group+.form__group {
@@ -1618,7 +1618,7 @@ h6 {
 }
 
 .main .main__siteBar .active__filters .button__clear {
-  margin-right: -4px;
+  margin-right: -5px;
   background: none;
   font-family: 'Montserrat';
   font-style: normal;
@@ -1755,6 +1755,7 @@ h6 {
   cursor: pointer;
   position: relative;
   width: 100%;
+  padding-top: 15px;
 }
 
 .dropChecks__button {
@@ -1769,13 +1770,24 @@ h6 {
 
 .dropChecks__arrow {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 21px;
+  right: -4px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
 }
 
 .checkbox-container {
   display: flex;
   align-items: center;
+  margin: 15px 0px;
 }
 
 .checkbox-container label {
@@ -1783,11 +1795,19 @@ h6 {
   display: flex;
   align-items: center;
 }
+.checkboxLabel{
+  padding: 0 0 0 0;
+}
 
 .checkbox-container input[type='checkbox'] {
   cursor: pointer;
   opacity: 0;
+  width: 19px;
+  height: 19px;
   position: absolute;
+}
+.dimentions{
+  margin: 0 8px;
 }
 
 .checkbox-container label::before {
@@ -1830,12 +1850,16 @@ h6 {
 }
 
 
-.dropsWithCheck +.dropsWithCheck{
-  border-top: 1px solid #FFFFFF; 
+.dropsWithCheck+.dropsWithCheck {
+  border-top: 1px solid #FFFFFF;
+}
+.sHow + .dropsWithCheck{
+  border-top: 1px solid #FFFFFF;
 }
 
-
-.dropChecks__lists {}
+.dropChecks__lists {
+  margin-top: 18px;
+}
 
 .dropChecks__listsHidden {
   display: none;
@@ -1850,6 +1874,61 @@ h6 {
 
   color: #838383;
 
+}
+
+.dropChecks__arrow180 {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.dropdown__arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.dropdown__arrow180 {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.sHow {
+  display: flex;
+  width: 207px;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #419EF4;
+  padding-right: 9px;
+}
+
+.showPlus {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 /* =================================================================================== */
@@ -2371,9 +2450,9 @@ h6 {
 
 .main .main__content .dropdownInCard {
   position: absolute;
-  padding: 15px 3px 14px 3px;
+  padding: 21px 3px 14px 5px;
   width: 106%;
-  height: 124px;
+  height: 129px;
   z-index: 2;
   top: 24px;
   left: -5px;
@@ -2388,6 +2467,7 @@ h6 {
   overflow-y: scroll;
   margin-top: 10px;
   overflow-x: hidden;
+  margin-right: 4px;
 }
 
 .main .main__content .dropdownInCard .dropdownInCard__list li .dropdownInCard__listItem {
