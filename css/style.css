@@ -215,6 +215,7 @@ h6 {
 }
 
 .selectedProduct__panel-top__btn {
+  z-index: 2;
   position: relative;
 }
 
@@ -234,10 +235,10 @@ h6 {
 
 .dropForSelectProduct {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   width: 100%;
-  height: 110px;
-  top: 40px;
+  height: 115px;
+  top: 28px;
   left: 0;
   background: #FFFFFF;
   border: 1px solid #DFDFDF;
@@ -248,7 +249,7 @@ h6 {
   width: 152px;
   height: 88px;
   overflow-y: scroll;
-  margin: 8px auto;
+  margin: 16px auto;
 }
 
 .middle__list {
@@ -332,8 +333,13 @@ h6 {
 }
 
 .subMiddle__right {
-  padding-left: 13px;
+  padding-left: 38px;
 }
+
+.subMiddle__right .dropdown ._icon-arrow{
+  right: -10px;
+}
+
 
 .addTiresBtn {
   margin-top: 16px;
@@ -364,6 +370,13 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.selectedProduct__panel .dropdown .options{
+  width: 242px;
+}
+
+.selectedProduct__panel .dropdown.active ._icon-arrow{
+  right: -12px;
 }
 
 .panel-footerBtn {
@@ -512,6 +525,9 @@ h6 {
 }
 
 /* ================================================================================================= */
+.slider__video{
+  margin: 0 0 0 -24px;
+}
 .videos {
   margin-top: 87px;
   margin-left: -4px;
@@ -520,6 +536,10 @@ h6 {
   border-radius: 10px;
   padding: 46px 40px;
 }
+.videos .slick-slide{
+  margin-right: 8px;
+}
+
 
 .videoPlayer__title {
   margin-top: 1px;
@@ -542,6 +562,7 @@ h6 {
 }
 
 .video__item {
+  margin-left: 24px;
   margin-bottom: 22px;
   width: 324px;
   height: 243px;
@@ -1213,123 +1234,7 @@ h6 {
   padding: 21px 20px 28px;
 }
 
-/* .dropdown {
-  position: relative;
-  z-index: 3;
-  width: 215px;
-  height: 42px;
-}
-.dropdown.active{
-  z-index: 4;
-}
 
-.dropdown input {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #DFDFDF;
-  padding: 15px 10px 12px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.dropdown .options {
-  z-index: 3;
-  position: absolute;
-  top: 34px;
-  width: 100%;
-  background: #FFFFFF;
-  border: 1px solid #DFDFDF;
-  display: none;
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top: 0;
-}
-
-.dropdown+.dropdown {
-  margin-top: 14px;
-}
-
-.dropdown.active .options {
-  display: block;
-}
-
-.dropdown .options .option__list {
-  overflow-y: scroll;
-  margin: 10px;
-  height: 167px;
-}
-
-._icon-arrow {
-  z-index: 2;
-  position: absolute;
-  width: 18px;
-  height: 10px;
-  top: 20px;
-  right: 14px;
-  color: #419EF4;
-  pointer-events: none;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
-.active ._icon-arrow {
-  right: 9px;
-  top: 16px;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-}
-
-.option {
-  cursor: pointer;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 8px 10px;
-  color: #000000;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.option:hover {
-  background: #F6F6F6;
-
-} */
 /* ===================================================================== */
 .main .main__siteBar .form__group+.form__group {
   margin-top: 14px;
