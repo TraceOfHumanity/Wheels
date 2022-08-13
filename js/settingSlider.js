@@ -35,7 +35,7 @@ $(function () {
           infinite: true,
           vertical: false,
           verticalSwiping: false,
-    centerMode: false,
+          centerMode: false,
 
         }
       },
@@ -61,8 +61,20 @@ $(function () {
           slidesToScroll: 1,
           infinite: true,
           rows: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          slidesPerRow: 1,
+          rows: 1,
+          arrows: true,
         }
       },
+
     ]
   });
 })

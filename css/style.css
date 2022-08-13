@@ -532,6 +532,30 @@ h6 {
   color: #000000;
 }
 
+.showAllText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #419EF4;
+  display: none;
+}
+
+.showAllRightColumn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #419EF4;
+  display: none;
+}
+
 /* ================================================================================================= */
 .slider__video {
   margin: 0 0 0 -24px;
@@ -3064,6 +3088,20 @@ h6 {
     margin: 0 auto;
   }
 
+  .showAllText {
+    margin-top: 12px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .selectedProduct__about-Subtext {
+    display: block;
+  }
+
+  .selectedProduct__about-SubtextShow {
+    display: none;
+  }
+
   .header .nameCompany {
     margin-left: 27px;
   }
@@ -3098,10 +3136,12 @@ h6 {
     width: calc(335px + (800 - 335) * ((100vw - 360px) / (767 - 360)));
     margin-top: -79px;
   }
-  .middle__list{
+
+  .middle__list {
     margin-top: calc(59px + (800 - 59) * ((100vw - 360px) / (767 - 360)));
     margin-bottom: calc(46px + (800 - 46) * ((100vw - 360px) / (767 - 360)));
   }
+
   .selectedProduct__about {
     margin-top: calc(32px + (300 - 32) * ((100vw - 360px) / (767 - 360)));
     margin-left: -3px;
@@ -3230,7 +3270,8 @@ h6 {
     margin-left: calc(-9px + (18 - 9) * ((100vw - 320px) / (767 - 320)));
     width: calc(288px + (458 - 288) * ((100vw - 320px) / (767 - 320)));
   }
-  .dropForSelectProduct__list-item{
+
+  .dropForSelectProduct__list-item {
     font-size: 10px;
   }
 
@@ -3285,34 +3326,83 @@ h6 {
     margin: 30px 0 0 0;
   }
 
-  .wheelspecs__title {
-    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (767 - 320)));
+  .wheelspecs {
+    margin-left: -5px;
   }
 
+  .wheelspecs__title {
+    margin-top: calc(42px + (58 - 42) * ((100vw - 360px) / (767 - 360)));
+    font-size: calc(26px + (26 - 26) * ((100vw - 360px) / (767 - 360)));
+  }
+
+  .wheelspecs__contentRightHidden {
+    display: none;
+  }
+
+  .contentLeft-left {
+    width: calc(150px + (26 - 150) * ((100vw - 360px) / (767 - 360)));
+  }
+
+  .contentRight-left{
+    width: calc(150px + (26 - 150) * ((100vw - 360px) / (767 - 360)));
+  }
   .contentLeft-leftItem {
-    font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(17px + (17 - 17) * ((100vw - 360px) / (767 - 360)));
+  }
+
+  .contentLeft-right {
+    width: calc(180px + (26 - 180) * ((100vw - 360px) / (767 - 360)));
+  }
+
+  .withHidden {
+    display: none;
+  }
+  .wheelspecs__contentRight{
+    margin: 0;
   }
 
   .contentLeft-rightItem {
-    font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(17px + (17 - 17) * ((100vw - 320px) / (767 - 320)));
   }
 
   .contentRight-leftItem {
-    font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (767 - 320)));
+    width: calc(163px + (17 - 130) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(17px + (17 - 17) * ((100vw - 320px) / (767 - 320)));
   }
 
   .contentRight-rightItem {
-    font-size: calc(11px + (17 - 11) * ((100vw - 320px) / (767 - 320)));
+    font-size: calc(17px + (17 - 17) * ((100vw - 320px) / (767 - 320)));
   }
 
   .wheelspecs__contentLeft {
     width: calc(800px + (1200 - 800) * ((100vw - 320px) / (767 - 320)));
   }
-
-  .videos {
-    margin-top: calc(10px + (87 - 10) * ((100vw - 320px) / (767 - 320)));
-    width: calc(320px + (1111 - 320) * ((100vw - 320px) / (767 - 320)));
+.showAllRightColumn {
+  margin-top: -15px;
+  display: inline-block;
+  width: max-content;
+  cursor: pointer;
+}
+  .wheelspecs__content{
+    flex-direction: column;
   }
+  .videos {
+    padding: 23px 0 0 0;
+    margin-top: calc(14px + (87 - 14) * ((100vw - 320px) / (767 - 320)));
+    width: calc(320px + (1111 - 320) * ((100vw - 320px) / (767 - 320)));
+    height: calc(668px + (1111 - 668) * ((100vw - 360px) / (767 - 360)));
+  }
+  .videoPlayer__title{
+    margin: 0 0 23px -4px;
+  }
+  .main .main__container .videos .slick-arrow.slick-prev{
+    top: calc(557px + (40 - 557) * ((100vw - 360px) / (767 - 360)));
+    right: calc(230px + (420 - 230) * ((100vw - 360px) / (767 - 360)));
+  }
+  .main .main__container .videos .slick-arrow.slick-next {
+    top: calc(557px + (40 - 557) * ((100vw - 360px) / (767 - 360)));
+    right: calc(190px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
+}
 
   .video__item {
     width: calc(327px + (500 - 327) * ((100vw - 320px) / (767 - 320)));
@@ -3324,10 +3414,16 @@ h6 {
   }
 
   .ratings:nth-child(even) {
-    width: calc(767px + (767 - 767) * ((100vw - 320px) / (767 - 320)));
+    width: calc(367px + (767 - 367) * ((100vw - 360px) / (767 - 360)));
     padding: calc(20px + (61 - 20) * ((100vw - 320px) / (767 - 320))) 20px;
   }
-
+  .rewiews{
+    width: calc(333px + (767 - 333) * ((100vw - 360px) / (767 - 360)));
+    margin: 10px 0 0 -6px;
+  }
+  .btnShowAll{
+    justify-content: center;
+  }
 }
 
 .additionally {

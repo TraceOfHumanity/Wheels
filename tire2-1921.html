@@ -140,15 +140,15 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="selectedProduct__panel-middle">
                 <ul class="middle__list">
                   <li class="middle__list-item _icon-dollar">SAVE UP TO $61 WHEN ADDING TIRES TO PACKAGE</li>
                   <li class="middle__list-item _icon-wheel">FREE MOUNT & BALANCE WITH TIRE PACKAGING!</li>
                   <li class="middle__list-item _icon-box">IN STOCK & FREE QUICK DELIVERY: THU, AUG 4</li>
                   <li class="middle__list-item _icon-discount">STARTING AT $128/MO WITH Affirm.</li>
-                  <li class="middle__list-item _icon-phone">QUESTIONS OR HELP NEEDED? CALL OUR EXPERTS AT  
-                      920-949-0909</li>
+                  <li class="middle__list-item _icon-phone">QUESTIONS OR HELP NEEDED? CALL OUR EXPERTS AT
+                    920-949-0909</li>
                 </ul>
               </div>
               <div class="selectedProduct__panel-subMiddle">
@@ -335,9 +335,20 @@
                 exposed lugs. These beautiful 6 spoke wheels are available in a 6x5.5 configuration and will be sure to
                 elevate the look of your vehicle build!
               </p>
-              <p class="selectedProduct__about-Subtext">
+              <p class="selectedProduct__about-Subtext selectedProduct__about-SubtextShow" id="dop">
                 If you want to learn more about Fuel wheels or explore other models available, visit: Fuel Wheels.
               </p>
+              <p class="showAllText">
+                Show all
+              </p>
+
+              <script>
+                // скріпт для кнопки show all
+                document.querySelector('.showAllText').addEventListener('click', function () {
+                  document.querySelector('#dop').classList.toggle('dropdown__list--visible');
+                  this.classList.add('.dropdown__button--active');
+                });
+              </script>
             </div>
           </div>
           <div class="wheelspecs">
@@ -361,7 +372,7 @@
                   <li class="contentLeft-rightItem">Fuel</li>
                   <li class="contentLeft-rightItem">Rebel</li>
                   <li class="contentLeft-rightItem">D67918908445</li>
-                  <li class="contentLeft-rightItem">Matte Black with a Simulated</li>
+                  <li class="contentLeft-rightItem">Matte Black <span class="withHidden">with a Simulated</span> </li>
                   <li class="contentLeft-rightItem">4.5</li>
                   <li class="contentLeft-rightItem">-12</li>
                   <li class="contentLeft-rightItem">18</li>
@@ -369,7 +380,8 @@
                   <li class="contentLeft-rightItem">106.10</li>
                 </ul>
               </div>
-              <div class="wheelspecs__contentRight">
+
+              <div class="wheelspecs__contentRight wheelspecs__contentRightHidden">
                 <ul class="contentRight-left">
                   <li class="contentRight-leftItem">Load Rating:</li>
                   <li class="contentRight-leftItem">Wheel Exp. Lugs: </li>
@@ -398,7 +410,13 @@
                   </li>
                 </ul>
               </div>
-
+              <p class="showAllRightColumn">Show all</p>
+              <script>
+                // скріпт для кнопки show all
+                document.querySelector('.showAllRightColumn').addEventListener('click', function () {
+                  document.querySelector('.wheelspecs__contentRight').classList.toggle('wheelspecs__contentRightHidden');
+                });
+              </script>
             </div>
 
           </div>
