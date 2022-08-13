@@ -34,6 +34,9 @@ $(function () {
           slidesToScroll: 1,
           infinite: true,
           vertical: false,
+          verticalSwiping: false,
+    centerMode: false,
+
         }
       },
     ]
