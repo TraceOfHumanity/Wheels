@@ -3131,21 +3131,21 @@ h6 {
 
   .selectedProduct__panel {
     order: 2px;
-    height: calc(1210px + (800 - 1210) * ((100vw - 320px) / (767 - 320)));
-    margin-left: calc(-5px + (800 - 5) * ((100vw - 360px) / (767 - 360)));
-    width: calc(335px + (800 - 335) * ((100vw - 360px) / (767 - 360)));
+    height: calc(1210px + (1090 - 1210) * ((100vw - 320px) / (767 - 320)));
+    margin-left: calc(-5px + (8 - 5) * ((100vw - 360px) / (767 - 360)));
+    width: calc(343px + (745 - 335) * ((100vw - 360px) / (767 - 360)));
     margin-top: -79px;
   }
 
   .middle__list {
-    margin-top: calc(59px + (800 - 59) * ((100vw - 360px) / (767 - 360)));
-    margin-bottom: calc(46px + (800 - 46) * ((100vw - 360px) / (767 - 360)));
+    margin-top: calc(59px + (60 - 59) * ((100vw - 360px) / (767 - 360)));
+    margin-bottom: calc(46px + (46 - 46) * ((100vw - 360px) / (767 - 360)));
   }
 
   .selectedProduct__about {
-    margin-top: calc(32px + (300 - 32) * ((100vw - 360px) / (767 - 360)));
+    margin-top: calc(32px + (30 - 32) * ((100vw - 360px) / (767 - 360)));
     margin-left: -3px;
-    width: calc(321px + (300 - 321) * ((100vw - 360px) / (767 - 360)));
+    width: calc(321px + (700 - 321) * ((100vw - 360px) / (767 - 360)));
     order: 3;
   }
 
@@ -3176,7 +3176,7 @@ h6 {
     height: 63px;
     gap: 7px;
     margin-top: calc(125px + (170 - 125) * ((100vw - 320px) / (767 - 320)));
-    margin-left: calc(-72px + (168 - 72) * ((100vw - 320px) / (767 - 320)));
+    margin-left: calc(-64px + (100 - 72) * ((100vw - 320px) / (767 - 320)));
     position: relative;
     transform: translateY(-150px);
     -webkit-transform: translateY(-150px);
@@ -3188,11 +3188,11 @@ h6 {
   .main .main__container .selectedProduct .slider2__smollImg {
     width: calc(63px + (63 - 63) * ((100vw - 320px) / (767 - 320)));
     height: 72px;
-    margin-left: -63px;
+    margin-left: calc(-63px + (4 - 63) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .selectedProduct .smoll__img {
-    width: calc(63px + (88 - 63) * ((100vw - 360px) / (767 - 360)));
+    width: calc(63px + (100 - 63) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .selectedProduct .slider2 .slick-track {
@@ -3200,14 +3200,14 @@ h6 {
   }
 
   .main .main__container .selectedProduct .slider2 .slick-list {
-    width: calc(280px + (767 - 280) * ((100vw - 360px) / (767 - 360)));
+    width: calc(280px + (530 - 280) * ((100vw - 360px) / (767 - 360)));
     margin: 0 0 0 calc(91px + (0 - 91) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .selectedProduct .slick-arrow.slick-prev {
     position: absolute;
     top: calc(25px + (40 - 23) * ((100vw - 320px) / (767 - 320)));
-    right: calc(-25px + (420 - 8) * ((100vw - 320px) / (767 - 320)));
+    right: calc(-25px + (430 - 8) * ((100vw - 320px) / (767 - 320)));
     font-size: 0;
     background: url(../img/arrowUp.svg);
     width: 19px;
@@ -3222,8 +3222,8 @@ h6 {
 
   .main .main__container .selectedProduct .slick-arrow.slick-next {
     position: absolute;
-    right: calc(-280px + (-40 - 308) * ((100vw - 320px) / (767 - 320)));
-    bottom: calc(-16px + (390 - 0) * ((100vw - 320px) / (767 - 320)));
+    right: calc(-320px + (490 - 308) * ((100vw - 320px) / (767 - 320)));
+    bottom: calc(20px + (-20 - 0) * ((100vw - 320px) / (767 - 320)));
     font-size: 0;
     background: url(../img/arrowDown.svg);
     width: 19px;
@@ -3245,7 +3245,7 @@ h6 {
   }
 
   .dropForSelectProduct__list {
-    width: calc(93px + (174 - 93) * ((100vw - 320px) / (767 - 320)));
+    width: calc(93px + (167 - 93) * ((100vw - 320px) / (767 - 320)));
   }
 
   .selectedProduct__panel .dropdown.active ._icon-arrow {
@@ -3276,11 +3276,11 @@ h6 {
   }
 
   .main .main__container .selectedProduct .dropdown {
-    width: calc(187px + (242 - 187) * ((100vw - 320px) / (767 - 320)));
+    width: calc(160px + (600 - 160) * ((100vw - 320px) / (767 - 320)));
   }
 
   .main .main__container .selectedProduct .dropdown input {
-    width: calc(239px + (276 - 239) * ((100vw - 320px) / (767 - 320)));
+    width: calc(206px + (620 - 206) * ((100vw - 320px) / (767 - 320)));
   }
 
   .subMiddle__right {
@@ -3306,7 +3306,7 @@ h6 {
   }
 
   .addTiresBtn {
-    width: calc(243px + (242 - 243) * ((100vw - 320px) / (767 - 320)));
+    width: calc(243px + (620 - 243) * ((100vw - 360px) / (767 - 360)));
   }
 
   .addTiresBtn__title {
@@ -3319,7 +3319,7 @@ h6 {
   }
 
   .selectedProduct__panel .dropdown .options {
-    width: calc(242px + (242 - 242) * ((100vw - 360px) / (767 - 360)));
+    width: calc(243px + (242 - 243) * ((100vw - 360px) / (767 - 360)));
   }
 
   .selectedProduct__panel-footer {
@@ -3340,11 +3340,11 @@ h6 {
   }
 
   .contentLeft-left {
-    width: calc(150px + (26 - 150) * ((100vw - 360px) / (767 - 360)));
+    width: calc(150px + (300 - 150) * ((100vw - 360px) / (767 - 360)));
   }
 
   .contentRight-left{
-    width: calc(150px + (26 - 150) * ((100vw - 360px) / (767 - 360)));
+    width: calc(150px + (300 - 150) * ((100vw - 360px) / (767 - 360)));
   }
   .contentLeft-leftItem {
     font-size: calc(17px + (17 - 17) * ((100vw - 360px) / (767 - 360)));
@@ -3366,7 +3366,7 @@ h6 {
   }
 
   .contentRight-leftItem {
-    width: calc(163px + (17 - 130) * ((100vw - 320px) / (767 - 320)));
+    width: calc(163px + (300 - 130) * ((100vw - 320px) / (767 - 320)));
     font-size: calc(17px + (17 - 17) * ((100vw - 320px) / (767 - 320)));
   }
 
@@ -3390,23 +3390,23 @@ h6 {
     padding: 23px 0 0 0;
     margin-top: calc(14px + (87 - 14) * ((100vw - 320px) / (767 - 320)));
     width: calc(320px + (1111 - 320) * ((100vw - 320px) / (767 - 320)));
-    height: calc(668px + (1111 - 668) * ((100vw - 360px) / (767 - 360)));
+    height: calc(668px + (1260 - 668) * ((100vw - 360px) / (767 - 360)));
   }
   .videoPlayer__title{
     margin: 0 0 23px -4px;
   }
   .main .main__container .videos .slick-arrow.slick-prev{
-    top: calc(557px + (40 - 557) * ((100vw - 360px) / (767 - 360)));
-    right: calc(230px + (420 - 230) * ((100vw - 360px) / (767 - 360)));
+    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
+    right: calc(230px + (1025 - 230) * ((100vw - 360px) / (767 - 360)));
   }
   .main .main__container .videos .slick-arrow.slick-next {
-    top: calc(557px + (40 - 557) * ((100vw - 360px) / (767 - 360)));
+    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
     right: calc(190px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
 }
 
   .video__item {
-    width: calc(327px + (500 - 327) * ((100vw - 320px) / (767 - 320)));
-    height: calc(245px + (380 - 245) * ((100vw - 320px) / (767 - 320)));
+    width: calc(327px + (750 - 327) * ((100vw - 320px) / (767 - 320)));
+    height: calc(245px + (562 - 245) * ((100vw - 320px) / (767 - 320)));
   }
 
   .ratings__hiddenBtn {
@@ -3419,7 +3419,7 @@ h6 {
   }
   .rewiews{
     width: calc(333px + (767 - 333) * ((100vw - 360px) / (767 - 360)));
-    margin: 10px 0 0 -6px;
+    margin: calc(10px + (30 - 10) * ((100vw - 360px) / (767 - 360))) 0 0 -6px;
   }
   .btnShowAll{
     justify-content: center;
