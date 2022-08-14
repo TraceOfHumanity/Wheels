@@ -1091,7 +1091,7 @@ h6 {
 
 .crumbs {
   width: calc(1110px + (1110 - 1110) * ((100vw - 320px) / (1920 - 320)));
-  margin: 20px auto 48px;
+  margin: 20px auto 35px;
 }
 
 .crumbs .container {
@@ -1700,6 +1700,7 @@ h6 {
   position: relative;
   width: 100%;
   padding-top: 15px;
+  padding-bottom: 13px;
 }
 
 .dropChecks__button {
