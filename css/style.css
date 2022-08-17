@@ -1135,91 +1135,7 @@ h6 {
   color: #419EF4;
 }
 
-/* .main .form__group+.form__group {
-  margin-top: 14px;
-}
 
-.main .form__group {
-  height: 42px;
-}
-.main .dropdown {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  position: relative;
-  width: 217px;
-  transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-.main .dropdown__button {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #FFFFFF;
-  padding: 13px 10px 12px;
-  border: 1px solid #DFDFDF;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  cursor: pointer;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.main .dropdown__button--active {
-  outline: none;
-  box-shadow: 0px 0px 0px 4px #6d6d6d;
-}
-.main .dropdown__arrow {
-  position: absolute;
-  right: 16px;
-  top: 20px;
-}
-.main .dropdown__list {
-  z-index: 2;
-  display: none;
-  position: absolute;
-  left: 0px;
-  top: 46px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 5px 1px #000000;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.main .dropdown__list--visible {
-  display: block;
-}
-.main .dropdown__list-item {
-  margin: 0;
-  padding: 12px 10px;
-  border-bottom: 0px;
-  cursor: pointer;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.main .dropdown__list-item:hover {
-  background: #dedede;
-}
-.main .dropdown__input-hidden {
-  display: none;
-}*/
 .main .main__container {
   width: 1100px;
   margin: 0 auto;
@@ -1330,7 +1246,6 @@ h6 {
 
 .main .dropdown__list {
   border: 1px solid #DFDFDF;
-  /* overflow-y: scroll; */
   min-height: 30px;
   max-height: 200px;
   z-index: 2;
@@ -1339,7 +1254,6 @@ h6 {
   left: 0px;
   top: 36px;
   background: #FFFFFF;
-  /* overflow-y: scroll; */
   width: 100%;
   padding: 12px 0 0 0;
   border-radius: 10px;
@@ -1349,7 +1263,7 @@ h6 {
   -o-border-radius: 10px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  border-top: none;
+  border-top: 1px solid #DFDFDF;
 }
 
 .main .dropdown__list .dropdown__lists {
@@ -1383,12 +1297,6 @@ h6 {
   display: none;
 }
 
-/* стилі для випадаючих меню з чекбоксами */
-/* .dropdown2 {
-  position: relative;
-  width: 215px;
-  height: 42px;
-} */
 
 .dropdown2 input {
   position: relative;
@@ -1451,7 +1359,6 @@ h6 {
 }
 
 .dropdown2 .options2 .option__list2 {
-  /* overflow-y: scroll; */
   position: relative;
   margin: 10px;
   height: 167px;
@@ -1471,20 +1378,20 @@ h6 {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -o-transform: rotate(180deg); */
 }
 
 .active2 ._icon-arrow {
   right: 10px;
-  transform: rotate(360deg);
+  /* transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
+  -o-transform: rotate(360deg); */
 }
 
 .option2 {
@@ -1704,6 +1611,7 @@ h6 {
 }
 
 .dropChecks__button {
+  display: block;
   width: 100%;
   font-family: 'Montserrat';
   font-style: normal;
@@ -1717,11 +1625,11 @@ h6 {
   position: absolute;
   top: 21px;
   right: -4px;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -o-transform: rotate(180deg); */
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -1748,9 +1656,14 @@ h6 {
 .checkbox-container input[type='checkbox'] {
   cursor: pointer;
   opacity: 0;
-  width: 19px;
-  height: 19px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
   position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .dimentions {
@@ -1767,7 +1680,12 @@ h6 {
 
 .checkbox-container label:hover::before,
 .checkbox-container input[type='checkbox']:hover+label::before {
+  border-radius: 50;
   background-color: #419df481;
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  -ms-border-radius: 50;
+  -o-border-radius: 50;
 }
 
 /* .checkbox-container input[type='checkbox']:focus + label::before {
@@ -1789,6 +1707,11 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .checkbox-container input[type='checkbox']:disabled+label::before {
@@ -1830,19 +1753,19 @@ h6 {
 }
 
 .dropChecks__arrow180 {
-  transform: rotate(0deg);
+  /* transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -o-transform: rotate(0deg); */
 }
 
 .dropdown__arrow {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  -o-transform: rotate(180deg); */
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -1851,11 +1774,11 @@ h6 {
 }
 
 .dropdown__arrow180 {
-  transform: rotate(0deg);
+  /* transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
+  -o-transform: rotate(0deg); */
 }
 
 .sHow {
@@ -1925,41 +1848,6 @@ h6 {
   }
 }
 
-/* @media (max-width: 530px) {
-  .main .main__siteBar {
-    width: calc(255px + (255 - 255) * ((100vw - 320px) / (530 - 320)));
-    display: none;
-    left: -100%;
-    box-shadow: none;
-  }
-
-  .main .main__siteBar--active {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    left: calc(33px + (260 - 33) * ((100vw - 320px) / (530 - 320)));
-    top: 45px;
-  }
-
-  .main .main__siteBar--active .categories__search+.active__filters {
-    margin-top: 0px;
-  }
-
-  .main .main__siteBar--active .searchByKeyword {
-    margin: 15px 0 10px 0;
-  }
-
-  .main .form__siteBar {
-    display: flex;
-    flex-direction: column;
-    height: 767px;
-  }
-
-  .main .categories__search+.active__filters {
-    margin-top: 0px;
-  }
-} */
-
 .main .main__content {
   width: 825px;
   position: relative;
@@ -2018,40 +1906,6 @@ h6 {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
-/* .main__contentTop .dropdown .options {
-  z-index: 3;
-  position: absolute;
-  top: 34px;
-  width: 100%;
-  background: #FFFFFF;
-  border: 1px solid #DFDFDF;
-  display: none;
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top: 0;
-}
-
-.main__contentTop .dropdown+.dropdown {
-  margin-top: 14px;
-}
-
-.main__contentTop .dropdown.active .options {
-  display: block;
-}
-
-.main__contentTop .dropdown .options .option__list {
-  overflow-y: scroll;
-  margin: 10px;
-  height: min-content;
-  max-height: 167px;
-} */
 
 .main__contentTop .dropdown ._icon-arrow {
   opacity: 1;
@@ -2285,11 +2139,6 @@ h6 {
   display: none;
 }
 
-/* @media (max-width: 767px) {
-  .main .main__content .main__contentBasic {
-    align-items: center;
-  }
-} */
 
 .main .main__content .card-content {
   width: 825px;
@@ -3539,4 +3388,3 @@ h6 {
   margin-left: 35px;
 }
 
-/*# sourceMappingURL=style.css.map */
