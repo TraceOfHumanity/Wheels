@@ -1234,29 +1234,11 @@ h6 {
   -ms-border-radius: 10px 10px 10px 10px;
   -o-border-radius: 10px 10px 10px 10px;
 }
-.main .dropdown__button--active{
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -o-border-radius: 10px 10px 0px 0px;
-}
-
-/* .dropdown__button.dropdown__button--active {
-  outline: none;
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -o-border-radius: 10px 10px 0px 0px;
+/* .main .dropdown .dropdown__button--active{
+  margin-bottom: 20px;
 } */
-.dropChecks .dropdown__button--active{
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -o-border-radius: 10px 10px 0px 0px;
-}
+
+
 .main .dropdown__arrow {
   position: absolute;
   right: 16px;
@@ -1271,7 +1253,7 @@ h6 {
   display: none;
   position: absolute;
   left: 0px;
-  top: 45px;
+  top: 37px;
   background: #FFFFFF;
   width: 100%;
   padding: 12px 0 0 0;
@@ -1291,6 +1273,7 @@ h6 {
 } */
 
 .main .dropdown__list .dropdown__lists {
+  border-top: 1px solid #DFDFDF;
   overflow-y: scroll;
   height: 160px;
   width: 200px;
@@ -1770,6 +1753,9 @@ h6 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.width{
+  margin: 0 7px;
 }
 
 /* .checkbox-container input[type='checkbox']:disabled+label::before {
