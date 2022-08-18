@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="header__mainImg">
-        <!-- <picture><source srcset="img/mainImg.webp" type="image/webp"><img class="mainImg" src="img/mainImg.jpg" alt="Main image"></picture> -->
+        
       </div>
       <div class="bg__headerMenu">
         <div class="header__container">
@@ -53,10 +53,10 @@
     </div>
     <main class="main">
       <div class="main__container">
-        <!-- -----------------------------------сайтбар ліваруч----------------------- -->
+        <!-- -----------------------------------sitebar on the left----------------------- -->
         <aside class="main__siteBar">
           <form class="form__siteBar" action="#">
-            <!-- верхня частина сайтбару -->
+            <!-- the top part of the sitebar -->
             <div class="categories__search">
 
               <div class="vehicle"> Vehicle Info</div>
@@ -140,14 +140,6 @@
                 </div>
               </div>
 
-              <!-- <script>
-                function show(anything) {
-                  document.querySelectorAll('.textBox').value = anything;
-                }
-              </script> -->
-
-
-
 
               <div class="fitment">
                 <p class="fitment__text">FITMENT PREFERENCES</p>
@@ -215,7 +207,7 @@
 
 
             </div>
-            <!-- /верхня частина сайтбару -->
+            <!-- /top part of the sitebar -->
 
             <div class="coverForRangeInput">
               <div class="headerRange">
@@ -242,7 +234,7 @@
               </div>
             </div>
 
-            <!-- нижня частина сайтбару з чекбоксами та пошуком -->
+            <!-- the lower part of the sitebar with checkboxes and search -->
             <div class="active__filters">
               <div class="active__filters-top">
                 <p class="active__filters-topTitle">Active Filtrs</p>
@@ -381,19 +373,19 @@
               <p class="searchByKeyword">
                 Search by Keyword
               </p>
-              <!-- пошук -->
+              <!--search -->
               <label class="input">
                 <input class="inputIn" placeholder="Search...." type="text">
                 <button class="button__search _icon-search" type="submit"></button>
               </label>
-              <!-- /пошук -->
+              <!-- /search -->
             </div>
-            <!-- нижня частина сайтбару з чекбоксами та пошуком -->
+            <!-- the lower part of the sitebar with checkboxes and search -->
           </form>
         </aside>
-        <!-- /сайтбар ліваруч -->
+        <!-- /sitebar on the left -->
 
-        <!-- основний контент(кількість товарів, сортування, товар, перехід по сторінкам і додаткова їнформація знизу) -->
+        <!-- main content (number of products, sorting, product, page navigation and additional information below) -->
 
         <div class="main__content">
 
@@ -469,7 +461,7 @@
 
 
             <div class="main__pagenation">
-              <!-- -----------------------------------------блок з картками----------------------------------- -->
+              <!-- -----------------------------------------block with cards----------------------------------- -->
               <div class="card-content" style="display: none">
                 <div class="card">
                   <div class="card__img">
@@ -729,10 +721,6 @@
                       <p class="costs"><span class="">$</span> 1828</p>
                       <p class="setFour">Set of four</p>
                     </div>
-                    <!-- <div class="more__info">
-                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
-                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
-                    </div> -->
                   </div>
                 </div>
 
@@ -2435,7 +2423,7 @@
                   </div>
                 </div>
               </div>
-              <!-- /блок з картками -->
+              <!-- /block with cards -->
 
             </div>
             <div class="pagination">
@@ -2443,7 +2431,7 @@
             </div>
 
           </div>
-          <!-- додаткова інформація під головним контентом -->
+          <!-- additional information under the main content -->
           <div class="additionally">
             <div class="additionally__info">
               <h2 class="title__bottomArticle">
@@ -2545,10 +2533,10 @@
         </div>
 
 
-        <!-- /додаткова інформація під головним контентом -->
+        <!-- /additional information under the main content -->
       </div>
     </main>
-    <!-- /основний контент(кількість товарів, сортування, товар, перехід по сторінкам і додаткова їнформація знизу) -->
+    <!-- /main content (number of products, sorting, product, page navigation and additional information below) -->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__column">
@@ -2597,25 +2585,8 @@
       })
     });
   </script>
-  <!-- <script>
-    document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper2) {
-      const dropDownBtn2 = dropDownWrapper2.querySelector('.textBox2');
-      dropDownBtn2.addEventListener('click', function (e) {
-        dropDownWrapper2.classList.toggle('active2');
-
-      })
-      function show(anything) {
-        document.querySelector('.textBox2').value = anything;
-      }
-    });
-  </script>
   <script>
-    document.querySelector('.menuFilters').addEventListener('click', function () {
-      document.querySelector('.main__siteBar').classList.toggle('main__siteBar--active');
-      // this.classList.add('.dropdown__button--active');
-    });
-  </script> -->
-  <script>
+    // maindropDowns =======================================================================================
     document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
       const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
       const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
@@ -2688,6 +2659,7 @@
 
   </script>
   <script>
+    // button show more/less is footer==================================================================================
     document.querySelectorAll('.dropdown2').forEach(function (dropDownWrapper) {
       const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
       const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
@@ -2699,7 +2671,6 @@
       const moreInfoPage1 = document.querySelector('#content');
 
 
-      // Кнопка показати більше у футері
       buttonMoreFoкOnePageInFooter.addEventListener('click', function () {
         moreInfoPage1.classList.toggle('content__hidden');
         if (moreInfoPage1.classList.contains('content__hidden')) {
@@ -2711,21 +2682,21 @@
 
 
 
-      // відкрити\закрити випадаючий список по кліку на нього
+      // open\close the drop-down list by clicking on it
       dropDownBtn.addEventListener('click', function () {
         dropDownList.classList.toggle('dropdown__list--visible');
         this.classList.add('.dropdown__button--active');
       });
 
 
-      //відкриття\закриття сайтбару для мобільних пристроїв
+      //opening\closing the sitebar for mobile devices
       dropDownBtnAside.addEventListener('click', function () {
         dropFilters.classList.toggle('main__siteBar--active');
         this.classList.add('.main__siteBar--active');
       });
 
 
-      // вибір елементу із списку та запамятання значення + закриття списку після вибору
+      // selecting an element from the list and remembering the value + closing the list after selection
       dropDownListItems.forEach(function (listItem) {
         listItem.addEventListener('click', function (e) {
           e.stopPropagation();
@@ -2737,7 +2708,7 @@
       });
 
 
-      // клік за межами списку закриває його
+      // clicking outside the list closes it
       document.addEventListener('click', function (e) {
         if (e.target !== dropDownBtn) {
           dropDownBtn.classList.remove('dropdown__button--active');
@@ -2746,7 +2717,7 @@
         }
       })
 
-      // закриття активного списку по кліку на ESC i Tab
+      // close the active list by clicking ESC and Tab
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Tab' || e.key === 'Escape') {
           dropDownBtn.classList.remove('dropdown__button--active');
@@ -2757,16 +2728,15 @@
 
   </script>
   <script>
-    // випадаючі списки з чекбоксами
+    // dropdown lists with checkboxes
     document.querySelectorAll('.dropsWithCheck').forEach(function (dropDownWrapperCheck) {
       const dropDownBtnCheck = dropDownWrapperCheck.querySelector('.dropChecks__button');
       const dropChecksLists = dropDownWrapperCheck.querySelector('.dropChecks__lists');
       const dropChecksArrow = dropDownWrapperCheck.querySelector('.dropChecks__arrow');
 
-      // відкрити\закрити випадаючий список по кліку на нього
+      // open\close the drop-down list by clicking on it
       dropDownBtnCheck.addEventListener('click', function () {
         dropChecksLists.classList.toggle('dropChecks__listsHidden');
-        // dropChecksArrow.classList.toggle('dropChecks__arrow180');
       })
     })
   </script>
