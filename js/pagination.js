@@ -68,6 +68,9 @@ $(function () {
   $(".next-page").on("click", function () {
     return showPage(currentPage + 1);
   });
+  $(".next20").on("click", function () {
+    return showPage(currentPage + 1);
+  });
 
   $(".previous-page").on("click", function () {
     return showPage(currentPage - 1);

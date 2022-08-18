@@ -1281,6 +1281,7 @@ h6 {
   
 }
 
+
 .main .dropdown__list--visible {
   display: block;
   
@@ -2293,6 +2294,16 @@ h6 {
   position: absolute;
   z-index: 3;
   cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.main .main__content .checkPrice:hover{
+  background: #F6F6F6;
+  border: 1px solid #419EF4;
+  color: #419EF4;
 }
 
 .main .main__content .dropdownInCard {
@@ -2672,6 +2683,19 @@ h6 {
   position: absolute;
   top: 14px;
   right: 10px;
+  cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.main .main__content .next20:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 @media (max-width: 1120px) {
