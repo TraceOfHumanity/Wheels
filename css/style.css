@@ -3335,7 +3335,11 @@ h6 {
 .content__hidden {
   display: none;
 }
-
+@media (mim-width: 1100px){
+  .footer .footer__container {
+    width: 1100px;
+  }
+}
 .footer {
   background-color: #1A1535;
   color: #FFFFFF;
@@ -3344,12 +3348,13 @@ h6 {
 }
 
 .footer .footer__container {
-  width: 1110px;
+  width: calc(300px + (1020 - 300) * ((100vw - 320px) / (1100 - 320)));
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .footer .more {
   position: relative;
@@ -3379,4 +3384,5 @@ h6 {
 .footer .soc+.soc {
   margin-left: 35px;
 }
+
 
