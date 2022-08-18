@@ -7,9 +7,6 @@ function getPageList(totalPages, page, maxLength) {
   var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
   var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
 
-  // const image = document.createElement("img");
-  // image.src = "../dist/img/threeBlackArrow.svg"
-  // document.querySelector('arrowPagePrew').appendChild(image);
 
   if (totalPages <= maxLength) {
     return range(1, totalPages);
