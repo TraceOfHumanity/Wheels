@@ -2640,6 +2640,93 @@ h6 {
   -o-transform: scale(1.05);
 }
 
+
+
+.additionally {
+  margin-top: 54px;
+  margin-right: -4px;
+}
+
+.additionally__info {
+  margin-bottom: 19px;
+  margin-left: 1px;
+}
+
+.title__bottomArticle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.text__bottomArticle {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.content {
+  display: block;
+}
+
+.content__hidden {
+  display: none;
+}
+
+@media (mim-width: 1100px) {
+  .footer .footer__container {
+    width: 1100px;
+  }
+}
+
+.footer {
+  background-color: #1A1535;
+  color: #FFFFFF;
+  padding: 17px 5px;
+  margin-top: 26px;
+}
+
+.footer .footer__container {
+  width: calc(300px + (1020 - 300) * ((100vw - 320px) / (1100 - 320)));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer .more {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer ._icon-arrow {
+  position: absolute;
+  right: -25px;
+  top: 0px;
+}
+
+.footer .footer__links {
+  font-size: 24px;
+}
+
+.footer ._icon-facebook-f {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer ._icon-twitter {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer .soc+.soc {
+  margin-left: 35px;
+}
 @media (max-width: 1120px) {
   .main .main__content {
     width: calc(100px + (825 - 100) * ((100vw - 360px) / (1120 - 360)));
@@ -2667,18 +2754,34 @@ h6 {
 
 @media (max-width: 767px) {
   .main .main__content .main__contentTop {
-    width: calc(329px + (767 - 329) * ((100vw - 360px) / (767 - 360)));
+    width: calc(329px + (735 - 329) * ((100vw - 360px) / (767 - 360)));
     margin: 0 0 28px 16px;
     height: 45px;
   }
 
   .main .main__content .card-content {
-    padding: 0 5px;
-    width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360)));
+    justify-content: space-evenly;
+    padding: 0 5px 0 10px;
+    width: calc(351px + (767 - 351) * ((100vw - 360px) / (767 - 360)));
+    gap: 15px 15px;
   }
-
+  .main .main__content .card__img{
+    margin: -1px 0 0 -2px;
+    width: calc(135px + (162 - 135) * ((100vw - 360px) / (767 - 360)));
+    height: calc(135px + (162 - 135) * ((100vw - 360px) / (767 - 360)));
+  }
+  .main .main__content .card__infoTop{
+    padding: 6px 0px 13px;
+  }
+  .main .main__content .more__info{
+    margin: 11px 0px 0px 3px;
+  }
+  .main .main__content .delivery {
+    width: 138px;
+  }
   .main .main__content .card-content .card {
     width: calc(158px + (190 - 158) * ((100vw - 360px) / (767 - 360)));
+    padding: 7px 12px 10px;
   }
 
   .main .main__content .card-content .image__card {
@@ -2687,17 +2790,42 @@ h6 {
   }
 
   .main .main__content .main__contentBasic .pagination {
-    width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
+    width: calc(327px + (760 - 327) * ((100vw - 360px) / (767 - 360)));
+    margin: 34px 0 0 12px;
   }
-
+  .main .main__content .setFour{
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .main .main__content .next20{
+    right: 16px;
+    top: 13px;
+  }
+  .main .main__content .card__price{
+    margin: 0 0 0 -1px;
+  }
   .main .main__content .main__contentBasic .additionally {
     padding: 0 5px;
     width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__content .additionally {
-    padding: 0 5px;
+    padding: 7px 11px 7px 9px;
     width: calc(360px + (760 - 360) * ((100vw - 360px) / (767 - 360)));
+    margin-top: 45px;
+  }
+  .title__bottomArticle{
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+  .additionally__info{
+    margin-bottom: 24px;
+    margin-left: 1px;
+    width: 336px;
+  }
+  .content{
+    padding: 7px 11px 7px 9px;
   }
 
   .main .main__content .checkPrice {
@@ -3339,90 +3467,4 @@ h6 {
     top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
     right: calc(150px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
   }
-}
-
-.additionally {
-  margin-top: 54px;
-  margin-right: -4px;
-}
-
-.additionally__info {
-  margin-bottom: 19px;
-  margin-left: 1px;
-}
-
-.title__bottomArticle {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 24px;
-  color: #000000;
-  margin-bottom: 5px;
-}
-
-.text__bottomArticle {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.content {
-  display: block;
-}
-
-.content__hidden {
-  display: none;
-}
-
-@media (mim-width: 1100px) {
-  .footer .footer__container {
-    width: 1100px;
-  }
-}
-
-.footer {
-  background-color: #1A1535;
-  color: #FFFFFF;
-  padding: 17px 5px;
-  margin-top: 26px;
-}
-
-.footer .footer__container {
-  width: calc(300px + (1020 - 300) * ((100vw - 320px) / (1100 - 320)));
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.footer .more {
-  position: relative;
-  cursor: pointer;
-}
-
-.footer ._icon-arrow {
-  position: absolute;
-  right: -25px;
-  top: 0px;
-}
-
-.footer .footer__links {
-  font-size: 24px;
-}
-
-.footer ._icon-facebook-f {
-  font-size: 24px;
-  color: #FFFFFF;
-}
-
-.footer ._icon-twitter {
-  font-size: 24px;
-  color: #FFFFFF;
-}
-
-.footer .soc+.soc {
-  margin-left: 35px;
 }
