@@ -559,7 +559,7 @@ h6 {
 
 /* ================================================================================================= */
 .slider__video {
-  margin: 0 0 0 -24px;
+  margin: 0 0 0 4px;
 }
 
 .videos {
@@ -3096,6 +3096,7 @@ h6 {
 
   .showAllText {
     margin-top: 12px;
+    margin-top: -1px;
     display: inline-block;
     cursor: pointer;
   }
@@ -3167,7 +3168,7 @@ h6 {
 
   .slick-slide img {
     margin: 0 0 0 3px;
-    width: calc(320px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
+    width: calc(313px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
   }
 
   .main .main__container .selectedProduct .slider1 {
@@ -3340,7 +3341,7 @@ h6 {
   }
 
   .wheelspecs {
-    margin-left: -5px;
+    margin-left: -3px;
   }
 
   .wheelspecs__title {
@@ -3406,28 +3407,34 @@ h6 {
 
   .videos {
     padding: 23px 0 0 0;
-    margin-top: calc(14px + (87 - 14) * ((100vw - 320px) / (767 - 320)));
+    border-radius: 0px;
+    margin-top: calc(15px + (87 - 14) * ((100vw - 320px) / (767 - 320)));
+    margin-left: calc(-12px + (0 - 0) * ((100vw - 320px) / (767 - 320)));
     width: calc(320px + (1111 - 320) * ((100vw - 320px) / (767 - 320)));
-    height: calc(668px + (1260 - 668) * ((100vw - 360px) / (767 - 360)));
-  }
+    height: calc(641px + (1260 - 668) * ((100vw - 360px) / (767 - 360)));
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
 
   .videoPlayer__title {
-    margin: 0 0 23px -4px;
+    margin: 0 0 23px 7px;
   }
 
   .main .main__container .videos .slick-arrow.slick-prev {
-    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(230px + (1025 - 230) * ((100vw - 360px) / (767 - 360)));
+    top: calc(529px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
+    right: calc(219px + (1025 - 230) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .videos .slick-arrow.slick-next {
-    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(190px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
+    top: calc(529px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
+    right: calc(179px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
   }
 
   .video__item {
     width: calc(302px + (764 - 327) * ((100vw - 320px) / (767 - 320)));
-    height: calc(245px + (562 - 245) * ((100vw - 320px) / (767 - 320)));
+    height: calc(213px + (562 - 245) * ((100vw - 320px) / (767 - 320)));
   }
 
   .ratings__hiddenBtn {
@@ -3441,7 +3448,7 @@ h6 {
 
   .rewiews {
     width: calc(333px + (767 - 333) * ((100vw - 360px) / (767 - 360)));
-    margin: calc(10px + (30 - 10) * ((100vw - 360px) / (767 - 360))) 0 0 -6px;
+    margin: calc(10px + (30 - 10) * ((100vw - 360px) / (767 - 360))) 0 0 -3px;
   }
 
   .btnShowAll {
@@ -3449,7 +3456,7 @@ h6 {
   }
 
   .rating__text {
-    padding: 0 5px;
+    padding: 0 0px;
   }
 }
 
