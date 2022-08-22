@@ -2614,7 +2614,7 @@
       const moreInfoPage1 = document.querySelector('#content');
 
 
-      // Кнопка показати більше у футері
+      // Show more button in the footer
       buttonMoreFoкOnePageInFooter.addEventListener('click', function () {
         moreInfoPage1.classList.toggle('content__hidden');
         if (moreInfoPage1.classList.contains('content__hidden')) {
@@ -2626,7 +2626,7 @@
 
 
 
-      // відкрити\закрити випадаючий список по кліку на нього
+      // open\close the drop-down list by clicking on it
       dropDownBtn.addEventListener('click', function () {
         dropDownList.classList.toggle('dropdown__list--visible');
         dropDownArrow.classList.toggle('dropdown__arrow180');
@@ -2634,14 +2634,14 @@
       });
 
 
-      //відкриття\закриття сайтбару для мобільних пристроїв
+      //opening/closing the sitebar for mobile devices
       dropDownBtnAside.addEventListener('click', function () {
         dropFilters.classList.toggle('main__siteBar--active');
         this.classList.add('.main__siteBar--active');
       });
 
 
-      // вибір елементу із списку та запамятання значення + закриття списку після вибору
+      // selecting an element from the list and remembering the value + closing the list after selection
       dropDownListItems.forEach(function (listItem) {
         listItem.addEventListener('click', function (e) {
           e.stopPropagation();
@@ -2653,7 +2653,7 @@
       });
 
 
-      // клік за межами списку закриває його
+      // clicking outside the list closes it
       document.addEventListener('click', function (e) {
         if (e.target !== dropDownBtn) {
           dropDownBtn.classList.remove('dropdown__button--active');
@@ -2662,7 +2662,7 @@
         }
       })
 
-      // закриття активного списку по кліку на ESC i Tab
+      // closing the active list by clicking on ESC and Tab
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Tab' || e.key === 'Escape') {
           dropDownBtn.classList.remove('dropdown__button--active');
