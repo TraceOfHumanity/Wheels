@@ -2068,12 +2068,12 @@ h6 {
     z-index: 0;
     display: none;
     position: absolute;
-    left: -70px;
+    left: -140px;
     top: 46px;
     background: #FFFFFF;
     box-shadow: 0px 0px 5px 1px #999999;
     overflow: hidden;
-    width: calc(50px + (150 - 50) * ((100vw - 320px) / (767 - 360)));
+    width: 216px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2102,7 +2102,7 @@ h6 {
   }
 
   .main .main__content .main__contentTop .dropdown__list-item:hover {
-    background: #dedede;
+    background: #F6F6F6;
   }
 
   .main .main__content .main__contentTop .dropdown__input-hidden {
