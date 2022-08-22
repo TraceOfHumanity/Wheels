@@ -2921,12 +2921,20 @@ h6 {
   }
   .slick-slide img {
     width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
-    margin-left: -2px;
+    margin-left: -1px;
   }
   .slider__video {
     margin: 0 0 0 calc(4px + (4 - 4) * ((100vw - 768px) / (1130 - 768)));
 }
-
+.slider__video .slick-slide img {
+  width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
+  margin-left: -34px;
+}
+.middle__list{
+  margin-top: 64px;
+    margin-left: 23px;
+    margin-bottom: 57px;
+}
   .main .main__container .selectedProduct .slider1 {
     width: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
   }
