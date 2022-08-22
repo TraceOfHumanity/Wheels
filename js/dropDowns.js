@@ -47,7 +47,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 });
 // ???????? Script for item dropdown. Working for one element
 function show(anything) {
-  document.querySelectorAll('.textBox').value = anything
+  document.querySelector('.textBox').value = anything
 }
 
 
