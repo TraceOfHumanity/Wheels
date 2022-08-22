@@ -247,7 +247,13 @@ h6 {
   border: 1px solid #DFDFDF;
   border-radius: 10px;
 }
-
+.dropdown__arrow180{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 .dropForSelectProduct__list {
   width: 166px;
   height: 88px;
@@ -2852,7 +2858,7 @@ h6 {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 359px) {
   .main .main__content .main__contentTop {
     width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360)));
   }
