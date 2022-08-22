@@ -20,6 +20,15 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     const dropDownList = dropDownWrapper.querySelector('.option__list');
     const dropDownListItems = dropDownList.querySelectorAll('.option');
 
+    // clicking outside the list closes it
+  document.addEventListener('click', function (e) {
+    if (e.target !== dropDownBtn) {
+      dropDownWrapper.classList.remove('active');
+      dropDownWrapper.classList.remove('active');
+
+    }
+  })
+
     dropDownListItems.forEach(function (listItem) {
       listItem.addEventListener('click', function (e) {
         e.stopPropagation();
@@ -29,13 +38,51 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
       })
     })
   })
-  function show(anything) {
-    document.querySelector('.textBox').value = anything;
-  }
 });
 function show(anything) {
   document.querySelector('.textBox').value = anything
 }
+//  // button show more/less is footer==================================================================================
+//  document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper2) {
+//   const dropDownBtn = dropDownWrapper2.querySelector('.dropdown__button');
+//   const dropDownList = dropDownWrapper2.querySelector('.option__list');
+//   const dropDownListItems = dropDownList.querySelectorAll('.option');
+//   const dropDownInput = dropDownWrapper2.querySelector('.dropdown__input-hidden');
+
+//   // open\close the drop-down list by clicking on it
+//   dropDownBtn.addEventListener('click', function () {
+//     dropDownList.classList.toggle('dropdown__list--visible');
+//     this.classList.add('.dropdown__button--active');
+//   });
+
+//   // selecting an element from the list and remembering the value + closing the list after selection
+//   dropDownListItems.forEach(function (listItem) {
+//     listItem.addEventListener('click', function (e) {
+//       e.stopPropagation();
+//       dropDownBtn.innerText = this.innerText;
+//       dropDownBtn.focus();
+//       dropDownInput.value = this.dataset.value;
+//       dropDownList.classList.remove('dropdown__list--visible');
+//     })
+//   });
+
+//   // clicking outside the list closes it
+//   document.addEventListener('click', function (e) {
+//     if (e.target !== dropDownBtn) {
+//       dropDownBtn.classList.remove('dropdown__button--active');
+//       dropDownList.classList.remove('dropdown__list--visible');
+
+//     }
+//   })
+
+//   // close the active list by clicking ESC and Tab
+//   document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Tab' || e.key === 'Escape') {
+//       dropDownBtn.classList.remove('dropdown__button--active');
+//       dropDownList.classList.remove('dropdown__list--visible');
+//     }
+//   })
+// });
 
 
 
