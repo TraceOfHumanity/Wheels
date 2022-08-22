@@ -3170,6 +3170,7 @@ h6 {
     margin: 0 0 0 3px;
     width: calc(313px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
   }
+  
 
   .main .main__container .selectedProduct .slider1 {
     width: calc(380px + (441 - 380) * ((100vw - 320px) / (767 - 320)));
@@ -3258,7 +3259,7 @@ h6 {
   }
 
   .dropForSelectProduct__list {
-    width: calc(93px + (167 - 93) * ((100vw - 320px) / (767 - 320)));
+    width: calc(198px + (508 - 93) * ((100vw - 320px) / (767 - 320)));
   }
 
   .selectedProduct__panel .dropdown.active ._icon-arrow {
@@ -3424,17 +3425,25 @@ h6 {
 
   .main .main__container .videos .slick-arrow.slick-prev {
     top: calc(529px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(219px + (1025 - 230) * ((100vw - 360px) / (767 - 360)));
+    right: calc(219px + (819 - 230) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .videos .slick-arrow.slick-next {
     top: calc(529px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(179px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
+    right: calc(179px + (630 - 190) * ((100vw - 360px) / (767 - 360)));
   }
+
 
   .video__item {
     width: calc(302px + (764 - 327) * ((100vw - 320px) / (767 - 320)));
     height: calc(213px + (562 - 245) * ((100vw - 320px) / (767 - 320)));
+  }
+  .videos .slick-slide img {
+    margin: 0 0 0 3px;
+    width: calc(286px + (749 - 320) * ((100vw - 320px) / (767 - 320)));
+  }
+  .videos .video {
+    height: calc(216px + (540 - 243) * ((100vw - 320px) / (767 - 320)));;
   }
 
   .ratings__hiddenBtn {
@@ -3457,6 +3466,11 @@ h6 {
 
   .rating__text {
     padding: 0 0px;
+  }
+  .dropForSelectProduct{
+    width: calc(242px + (710 - 333) * ((100vw - 360px) / (767 - 360)));
+    margin-left: calc(36px + (5 - 5) * ((100vw - 360px) / (767 - 360)));
+    margin-top: -4px;
   }
 }
 
