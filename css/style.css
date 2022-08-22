@@ -3196,7 +3196,7 @@ h6 {
 
   .slick-slide img {
     margin: 0 0 0 3px;
-    width: calc(313px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
+    width: calc(320px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
   }
 
 
