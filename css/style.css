@@ -218,6 +218,7 @@ h6 {
 
 .selectedProduct__panel-top__btn {
   z-index: 2;
+  margin-bottom: -18px;
   position: relative;
 }
 
@@ -2904,10 +2905,19 @@ h6 {
     width: min-content;
     order: 1;
   }
-
-  .slick-slide img {
-    width: calc(200px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
+  .videos .slick-slide{
+    margin-right: 8px;
   }
+  .video {
+    height: calc(170px + (332 - 255) * ((100vw - 320px) / (1130 - 767)));;
+  }
+  .slick-slide img {
+    width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
+    margin-left: -2px;
+  }
+  .slider__video {
+    margin: 0 0 0 calc(4px + (4 - 4) * ((100vw - 768px) / (1130 - 768)));
+}
 
   .main .main__container .selectedProduct .slider1 {
     width: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
@@ -3074,7 +3084,7 @@ h6 {
 
   .video__item {
     width: calc(327px + (500 - 327) * ((100vw - 768px) / (1130 - 768)));
-    height: calc(245px + (380 - 245) * ((100vw - 768px) / (1130 - 768)));
+    height: calc(245px + (340 - 245) * ((100vw - 768px) / (1130 - 768)));
   }
 
   .ratings__hiddenBtn {
@@ -3093,6 +3103,9 @@ h6 {
   .header .header__container {
     margin: 0 auto;
   }
+  .slider__video {
+    margin: 0 0 0 4px;
+}
 
   .showAllText {
     margin-top: 12px;
@@ -3150,8 +3163,9 @@ h6 {
   .middle__list {
     margin-top: calc(59px + (60 - 59) * ((100vw - 360px) / (767 - 360)));
     margin-bottom: calc(46px + (46 - 46) * ((100vw - 360px) / (767 - 360)));
+    border-top: 1px solid #FFFFFF;
   }
-
+  
   .selectedProduct__about {
     margin-top: calc(30px + (30 - 32) * ((100vw - 360px) / (767 - 360)));
     margin-left: -2px;
@@ -3251,6 +3265,7 @@ h6 {
 
   .selectedProduct__panel-top {
     width: calc(200px + (398 - 200) * ((100vw - 320px) / (767 - 320)));
+    
   }
 
   .selectedProduct__panel-top__check {
@@ -3269,7 +3284,10 @@ h6 {
   .middle__list-item {
     font-size: calc(14px + (14 - 14) * ((100vw - 360px) / (767 - 360)));
   }
-
+  /* .middle__list-item:first-child{
+    border-top: 1px solid #FFFFFF;
+  } */
+  
   .selectedProduct__panel-middle {
     margin-top: calc(-18px + (0 - 18) * ((100vw - 320px) / (767 - 320)));
     /* margin-left: 50px; */
