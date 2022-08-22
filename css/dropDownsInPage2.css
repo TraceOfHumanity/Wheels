@@ -75,7 +75,7 @@
 
 .dropdown .options .option__list {
   overflow-y: scroll;
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   height: 167px;
 }
 
