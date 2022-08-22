@@ -3513,14 +3513,32 @@ h6 {
   .slick-slide img {
     width: calc(296px + (333 - 320) * ((100vw - 320px) / (360 - 320)));
   }
-
+  .main .main__container .selectedProduct .slick-arrow.slick-next {
+    position: absolute;
+    right: calc(-322px + (338 - 308) * ((100vw - 320px) / (360 - 320)));
+    bottom: calc(19px + (-2 - 0) * ((100vw - 320px) / (360 - 320)));
+    font-size: 0;
+    background: url(../img/arrowDown.svg);
+    width: 19px;
+    height: 18px;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
   .main .main__container .selectedProduct .slider2 {
     margin-left: calc(-76px + (100 - 72) * ((100vw - 320px) / (360 - 320)));
     margin-top: calc(80px + (170 - 125) * ((100vw - 320px) / (360 - 320)));
   }
 
   .main .main__container .selectedProduct .slider2__smollImg {
-    margin-left: calc(-55px + (33 - 63) * ((100vw - 320px) / (360 - 320)));
+    margin-left: calc(-59px + (39 - 55) * ((100vw - 320px) / (360 - 320)));
+  }
+  .main .main__container .selectedProduct .slider2 .slick-list{
+    width: calc(284px + (530 - 280) * ((100vw - 360px) / (767 - 360)));
+    margin: 0 0 0 calc(84px + (0 - 91) * ((100vw - 360px) / (767 - 360)));
   }
 
   .main .main__container .selectedProduct .smoll__img {
@@ -3536,12 +3554,12 @@ h6 {
   }
 
   .main .main__container .videos .slick-arrow.slick-prev {
-    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(270px + (1025 - 230) * ((100vw - 360px) / (767 - 360)));
+    top: calc(475px + (529 - 475) * ((100vw - 320px) / (360 - 320)));
+    right: calc(170px + (296 - 230) * ((100vw - 320px) / (360 - 320)));
   }
 
   .main .main__container .videos .slick-arrow.slick-next {
-    top: calc(576px + (1160 - 576) * ((100vw - 360px) / (767 - 360)));
-    right: calc(150px + (420 - 190) * ((100vw - 360px) / (767 - 360)));
+    top: calc(475px + (529 - 475) * ((100vw - 320px) / (360 - 320)));
+    right: calc(122px + (257 - 190) * ((100vw - 320px) / (360 - 320)));
   }
 }
