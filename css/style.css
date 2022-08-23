@@ -120,7 +120,7 @@ h6 {
   border-radius: 10px;
 }
 
-/* ================================================================================/reset */
+/* ======================================/reset */
 .main .main__container .selectedProduct {
   margin-top: 12px;
   width: 100%;
@@ -141,10 +141,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 300px;
-
 }
-
-
 
 .selectedProduct__panel {
   order: 2;
@@ -247,13 +244,15 @@ h6 {
   border: 1px solid #DFDFDF;
   border-radius: 10px;
 }
-.dropdown__arrow180{
+
+.dropdown__arrow180 {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+
 .dropForSelectProduct__list {
   width: 166px;
   height: 88px;
@@ -373,7 +372,6 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-
   color: #FFFFFF;
 }
 
@@ -415,8 +413,6 @@ h6 {
 .panel-footerBtn:hover {
   box-shadow: 0px 0px 0pc 0px #419ef4;
 }
-
-/* .selectedProduct__about {} */
 
 .selectedProduct__about-title {
   margin-top: 8px;
@@ -461,7 +457,6 @@ h6 {
   color: #000000;
 }
 
-/* ================================================================================================= */
 .wheelspecs {
   margin-left: -1px;
 }
@@ -564,7 +559,7 @@ h6 {
   display: none;
 }
 
-/* ================================================================================================= */
+
 .slider__video {
   margin: 0 0 0 4px;
 }
@@ -610,7 +605,7 @@ h6 {
   height: 243px;
 }
 
-/* ================================================================================================= */
+
 .rewiews {
   margin-top: 69px;
   margin-left: -1px;
@@ -721,7 +716,6 @@ h6 {
 
 }
 
-/* ================================================================================================= */
 .selectedProduct__panel-subMiddle .dropdown {
   width: 241px;
 }
@@ -1743,11 +1737,6 @@ h6 {
   cursor: pointer;
 }
 
-/* .sHow+.dropsWithCheck {
-
-  border-top: 1px solid #FFFFFF;
-} */
-
 .dropChecks__lists {
   margin-top: 17px;
 }
@@ -1855,7 +1844,6 @@ h6 {
   -o-border-radius: 10px;
 }
 
-/* --------------------- */
 .main__contentTop .dropdown {
   position: relative;
   width: 215px;
@@ -2913,28 +2901,36 @@ h6 {
     width: min-content;
     order: 1;
   }
-  .videos .slick-slide{
+
+  .videos .slick-slide {
     margin-right: 8px;
   }
+
   .video {
-    height: calc(170px + (332 - 255) * ((100vw - 320px) / (1130 - 767)));;
+    height: calc(170px + (332 - 255) * ((100vw - 320px) / (1130 - 767)));
+    ;
   }
+
   .slick-slide img {
     width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
     margin-left: -1px;
   }
+
   .slider__video {
     margin: 0 0 0 calc(4px + (4 - 4) * ((100vw - 768px) / (1130 - 768)));
-}
-.slider__video .slick-slide img {
-  width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
-  margin-left: -34px;
-}
-.middle__list{
-  margin-top: 64px;
+  }
+
+  .slider__video .slick-slide img {
+    width: calc(198px + (441 - 200) * ((100vw - 320px) / (1130 - 320)));
+    margin-left: -34px;
+  }
+
+  .middle__list {
+    margin-top: 64px;
     margin-left: 23px;
     margin-bottom: 57px;
-}
+  }
+
   .main .main__container .selectedProduct .slider1 {
     width: calc(380px + (441 - 380) * ((100vw - 320px) / (1130 - 320)));
   }
@@ -3119,9 +3115,10 @@ h6 {
   .header .header__container {
     margin: 0 auto;
   }
+
   .slider__video {
     margin: 0 0 0 -29px;
-}
+  }
 
   .showAllText {
     margin-top: 12px;
@@ -3129,14 +3126,7 @@ h6 {
     display: inline-block;
     cursor: pointer;
   }
-  /* .main .dropdown__list .dropdown__lists {
-    border-top: 1px solid #DFDFDF;
-    overflow-y: scroll;
-    height: 117px;
-    width: 211px;
-    margin: 0 0 0 0;
-  
-  } */
+
   .selectedProduct__about-Subtext {
     display: block;
   }
@@ -3156,7 +3146,8 @@ h6 {
   .crumbs {
     margin: 20px 10px 25px;
   }
-  .crumbsPage2{
+
+  .crumbsPage2 {
     margin: 20px 10px 48px;
   }
 
@@ -3188,7 +3179,7 @@ h6 {
     margin-bottom: calc(46px + (46 - 46) * ((100vw - 360px) / (767 - 360)));
     border-top: 1px solid #FFFFFF;
   }
-  
+
   .selectedProduct__about {
     margin-top: calc(30px + (30 - 32) * ((100vw - 360px) / (767 - 360)));
     margin-left: -2px;
@@ -3200,14 +3191,14 @@ h6 {
     flex-direction: column;
     width: min-content;
     margin: 0 auto;
-    
+
   }
 
   .slick-slide img {
     margin: 0 0 0 3px;
     width: calc(313px + (441 - 320) * ((100vw - 320px) / (767 - 320)));
   }
-  
+
 
   .main .main__container .selectedProduct .slider1 {
     width: calc(380px + (441 - 380) * ((100vw - 320px) / (767 - 320)));
@@ -3267,9 +3258,11 @@ h6 {
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
   }
-  .br{
+
+  .br {
     display: none;
   }
+
   .main .main__container .selectedProduct .slick-arrow.slick-next {
     position: absolute;
     right: calc(-328px + (490 - 308) * ((100vw - 320px) / (767 - 320)));
@@ -3288,7 +3281,7 @@ h6 {
 
   .selectedProduct__panel-top {
     width: calc(200px + (398 - 200) * ((100vw - 320px) / (767 - 320)));
-    
+
   }
 
   .selectedProduct__panel-top__check {
@@ -3307,13 +3300,9 @@ h6 {
   .middle__list-item {
     font-size: calc(14px + (14 - 14) * ((100vw - 360px) / (767 - 360)));
   }
-  /* .middle__list-item:first-child{
-    border-top: 1px solid #FFFFFF;
-  } */
-  
+
   .selectedProduct__panel-middle {
     margin-top: calc(-18px + (0 - 18) * ((100vw - 320px) / (767 - 320)));
-    /* margin-left: 50px; */
   }
 
   .selectedProduct__panel-subMiddle {
@@ -3458,7 +3447,7 @@ h6 {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
-}
+  }
 
   .videoPlayer__title {
     margin: 0 0 23px 7px;
@@ -3479,12 +3468,15 @@ h6 {
     width: calc(302px + (764 - 327) * ((100vw - 320px) / (767 - 320)));
     height: calc(213px + (562 - 245) * ((100vw - 320px) / (767 - 320)));
   }
+
   .videos .slick-slide img {
     margin: 0 0 0 3px;
     width: calc(286px + (749 - 320) * ((100vw - 320px) / (767 - 320)));
   }
+
   .videos .video {
-    height: calc(216px + (540 - 243) * ((100vw - 320px) / (767 - 320)));;
+    height: calc(216px + (540 - 243) * ((100vw - 320px) / (767 - 320)));
+    ;
   }
 
   .ratings__hiddenBtn {
@@ -3508,7 +3500,8 @@ h6 {
   .rating__text {
     padding: 0 0px;
   }
-  .dropForSelectProduct{
+
+  .dropForSelectProduct {
     width: calc(242px + (710 - 333) * ((100vw - 360px) / (767 - 360)));
     margin-left: calc(36px + (5 - 5) * ((100vw - 360px) / (767 - 360)));
     margin-top: -4px;

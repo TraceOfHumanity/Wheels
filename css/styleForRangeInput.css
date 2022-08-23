@@ -129,7 +129,3 @@ input[type="range"]::-moz-range-thumb {
   -moz-appearance: none;
   border: 1.5px solid #FFFFFF;
 }
-/* .input-min,
-.input-min{
-  padding-left: 0;
-} */
