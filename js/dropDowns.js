@@ -21,13 +21,12 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     const dropDownListItems = dropDownList.querySelectorAll('.option');
 
     // clicking outside the list closes it
-  document.addEventListener('click', function (e) {
-    if (e.target !== dropDownBtn) {
-      dropDownWrapper.classList.remove('active');
-      dropDownWrapper.classList.remove('active');
+    document.addEventListener('click', function (e) {
+      if (e.target !== dropDownBtn) {
+        dropDownWrapper.classList.remove('active');
 
-    }
-  })
+      }
+    })
 
     dropDownListItems.forEach(function (listItem) {
       listItem.addEventListener('click', function (e) {
@@ -37,10 +36,18 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
         listItem.dropDownBtn.value = this.show.value;
       })
     })
+
+    // close the active list by clicking ESC and Tab
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab' || e.key === 'Escape') {
+        dropDownWrapper.classList.remove('active');
+      }
+    })
   })
 });
+// ???????? Script for item dropdown. Working for one element
 function show(anything) {
-  document.querySelector('.textBox').value = anything
+  document.querySelectorAll('.textBox').value = anything
 }
 //  // button show more/less is footer==================================================================================
 //  document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper2) {
@@ -79,7 +86,6 @@ function show(anything) {
 //   document.addEventListener('keydown', function (e) {
 //     if (e.key === 'Tab' || e.key === 'Escape') {
 //       dropDownBtn.classList.remove('dropdown__button--active');
-//       dropDownList.classList.remove('dropdown__list--visible');
 //     }
 //   })
 // });
