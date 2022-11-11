@@ -2155,6 +2155,8 @@ h6 {
 }
 
 .main .main__content .card:hover {
+  position: relative;
+  z-index: 3;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -2651,16 +2653,17 @@ h6 {
   margin-left: 1px;
 }
 
-.title__bottomArticle {
+.additionally h2{
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 30px;
   line-height: 24px;
   color: #000000;
+  margin-top: 19px;
   margin-bottom: 5px;
 }
 
-.text__bottomArticle {
+.additionally p {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
