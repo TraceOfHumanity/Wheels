@@ -1243,7 +1243,7 @@ h6 {
 
 .main .dropdown__list {
   border: 1px solid #DFDFDF;
-  height: 137px;
+  height: fit-content;
   z-index: 2;
   display: none;
   position: absolute;
@@ -1266,9 +1266,10 @@ h6 {
 .main .dropdown__list .dropdown__lists {
   border-top: 1px solid #DFDFDF;
   overflow-y: scroll;
-  height: 117px;
+  height: fit-content;
+  max-height: 117px;
   width: 211px;
-  margin: 0 0 0 0;
+  margin: 0 0 10px 0;
 
 }
 
@@ -2661,6 +2662,18 @@ h6 {
   color: #000000;
   margin-top: 19px;
   margin-bottom: 5px;
+}
+
+h1 {
+  margin: 16px 0 48px 25px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #2f2f2f;
+  position: relative;
+  display: inline-block;
 }
 
 .additionally p {
