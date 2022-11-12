@@ -2254,7 +2254,7 @@ h6 {
   position: absolute;
   padding: 21px 3px 14px 5px;
   width: 106%;
-  height: 129px;
+  height: fit-content;
   z-index: 2;
   top: 24px;
   left: -5px;
@@ -2265,7 +2265,8 @@ h6 {
 }
 
 .main .main__content .dropdownInCard .dropdownInCard__list {
-  height: 92px;
+  height: fit-content;
+  max-height: 92px;
   overflow-y: scroll;
   margin-top: 10px;
   overflow-x: hidden;
