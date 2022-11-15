@@ -2889,10 +2889,10 @@ h1 {
     height: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
   }
 
-  .main .main__content .card-content .image__card {
+  /* .main .main__content .card-content .image__card {
     width: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
     height: calc(135px + (162 - 135) * ((100vw - 320px) / (340 - 320)));
-  }
+  } */
 
   .main .main__content .checkPrice {
     width: 104%;
