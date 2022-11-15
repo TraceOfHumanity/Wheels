@@ -1810,7 +1810,7 @@ h6 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
+  }
 
   .coverForRangeInput {
     margin: 0;
@@ -1861,9 +1861,7 @@ h6 {
   height: 42px;
 }
 
-.main__contentTop .form__groupSort {
-  margin: 0 0 0 -17px;
-}
+
 
 .form__groupSort2 {
   display: none;
@@ -1948,10 +1946,12 @@ h6 {
 .menuFilters {
   display: none;
 }
-.mobile__parameters{
+
+.mobile__parameters {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
+
 .main .main__contentTop .dropdown__list {
   left: 0px;
   width: 101%;
@@ -1978,13 +1978,10 @@ h6 {
   }
 
 
-  .main .main__content .form__groupSort {
+  /* .main .main__content .form__groupSort {
     display: none;
-  }
+  } */
 
-  .main .main__content .form__groupSort2 {
-    display: block;
-  }
 
   .main .main__content .main__contentTop .results {
     display: none;
@@ -2728,9 +2725,10 @@ h1 {
     /* width: calc(100px + (825 - 100) * ((100vw - 360px) / (1120 - 360))); */
     width: 100%;
   }
+
   .crumbs {
     width: 100%;
-}
+  }
 
   .main .main__content .main__contentTop {
     width: calc(480px + (825 - 480) * ((100vw - 768px) / (1120 - 768)));
@@ -2845,6 +2843,7 @@ h1 {
   margin-top: 19px;
   margin-bottom: 5px;
 }
+
 .additionally h3 {
   font-family: 'Montserrat';
   font-weight: 500;
