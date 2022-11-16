@@ -300,7 +300,6 @@ h6 {
 ._icon-dollar:before {
   position: absolute;
   top: 2px;
-  left: -26px;
   font-size: 18px;
   color: #419EF4;
 }
@@ -313,13 +312,6 @@ h6 {
   color: #419EF4;
 }
 
-._icon-box:before {
-  position: absolute;
-  top: 0px;
-  left: -31px;
-  font-size: 21px;
-  color: #419EF4;
-}
 
 ._icon-discount:before {
   position: absolute;
@@ -1795,7 +1787,9 @@ h6 {
     display: none;
     left: -100%;
   }
-
+  .mobile__hidden{
+    display: none;
+  }
   .main .main__siteBar--active {
     display: block;
     position: absolute;
@@ -1957,9 +1951,9 @@ h6 {
   width: 101%;
 }
 
-.main .main__content .main__contentTop .resultsForMobile {
+/* .main .main__content .main__contentTop .resultsForMobile {
   display: none;
-}
+} */
 
 @media (max-width: 767px) {
   .main .main__content .main__contentTop .form__group {
@@ -1984,11 +1978,7 @@ h6 {
 
 
   .main .main__content .main__contentTop .results {
-    display: none;
     width: calc(120px + (540 - 120) * ((100vw - 320px) / (767 - 320)));
-  }
-
-  .main .main__content .main__contentTop .resultsForMobile {
     white-space: nowrap;
     display: block;
     font-family: 'Montserrat';
@@ -1996,10 +1986,19 @@ h6 {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    /* margin-left: calc(-4px + (100 - 31) * ((100vw - 320px) / (767 - 320))); */
-    /* margin-right: calc(3px + (400 - 32) * ((100vw - 320px) / (767 - 320))); */
     color: #000000;
   }
+
+  /* .main .main__content .main__contentTop .resultsForMobile {
+    white-space: nowrap;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  } */
 
   .main .main__content .main__contentTop .dropdown {
     /* margin-top: -2px; */
@@ -2394,23 +2393,32 @@ h6 {
 }
 
 .main .main__content ._icon-dollar::before {
-  position: absolute;
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  text-align: center;
   top: 3px;
-  left: -6px;
+  left: 0px;
+  margin: 0 5px 0 0;
   color: #419EF4;
   font-size: 18px;
 }
 
 .main .main__content .delivery {
   position: relative;
-  padding: 15px 0px 0px 20px;
   margin-left: -1px;
 }
 
 .main .main__content ._icon-box::before {
-  position: absolute;
-  top: 24px;
-  left: -11px;
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  text-align: center;
+  top: 5px;
+  left: 0;
+  margin: 0 5px 0 0;
   font-size: 20px;
   color: #419EF4;
 }
@@ -2780,7 +2788,7 @@ h1 {
   }
 
   .main .main__content .more__info {
-    margin: 11px 0px 0px 3px;
+    margin: 11px 0px 0px 0px;
   }
 
   /* .main .main__content .delivery {
@@ -3663,6 +3671,6 @@ h1 {
   margin: 0 5px;
 }
 
-.icon-real-usage:before {
+/* .icon-real-usage:before {
   top: 13px !important;
-}
+} */
