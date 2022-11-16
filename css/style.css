@@ -2875,9 +2875,9 @@ h1 {
 
 
 @media (max-width: 359px) {
-  .main .main__content .main__contentTop {
-    /* width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360))); */
-  }
+  /* .main .main__content .main__contentTop {
+   width: calc(360px + (767 - 360) * ((100vw - 360px) / (767 - 360)));
+  } */
 
   .main .main__content .card-content .card {
     width: calc(270px + (329 - 270) * ((100vw - 320px) / (340 - 320)));
